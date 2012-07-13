@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Fuck"
+date: 2012-07-13 16:09
+comments: true
+categories: test
+---
 Dillinger
 =========
 
@@ -61,11 +68,3 @@ NOTE: Have a look at the `app.json` file as it has some configuration variables 
 
 
 *Free Software, Fuck Yeah!*
-
----
-layout: post
-title: "Fuck"
-date: 2012-07-13 16:09
-comments: true
-categories: 
----
