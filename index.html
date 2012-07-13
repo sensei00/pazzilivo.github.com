@@ -7,9 +7,7 @@
 	<meta name="author" content="Pazzilivo">
 
 	
-	<meta name="description" content="Dillinger Dillinger is a cloud-enabled HTML5 Markdown editor. Type some Markdown text in the left window
-See the HTML in the right
-Magic Markdown is &hellip;">
+	<meta name="description" content="今天刚刚安装成功了一个[Octopress]的blog，由于需要使用[Markdown]语法进行编辑，所以在网上查了一些资料学习了一下，我记录一些比较常用的。 标题的形式 # This is an H1 ## This is an H2 ###### This is an H6 代码的形式 使用 &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -76,73 +74,42 @@ Magic Markdown is &hellip;">
 
 
     <article class="post">
-	<h1 class="title"><a href="/blog/2012/07/13/fuck/">Fuck</a></h1>
+	<h1 class="title"><a href="/blog/2012/07/13/fuck/">Markdown 使用</a></h1>
 	<div class="entry-content">
-		<h1>Dillinger</h1>
+		<p>今天刚刚安装成功了一个[Octopress]的blog，由于需要使用[Markdown]语法进行编辑，所以在网上查了一些资料学习了一下，我记录一些比较常用的。</p>
 
-<p>Dillinger is a cloud-enabled HTML5 Markdown editor.</p>
+<h4>标题的形式</h4>
 
-<ul>
-<li>Type some Markdown text in the left window</li>
-<li>See the HTML in the right</li>
-<li>Magic</li>
-</ul>
+<pre><code># This is an H1
 
+## This is an H2
 
-<p>Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site] [1]:</p>
+###### This is an H6
+</code></pre>
 
-<blockquote><p>The overriding design goal for Markdown&#8217;s
-formatting syntax is to make it as readable
-as possible. The idea is that a
-Markdown-formatted document should be
-publishable as-is, as plain text, without
-looking like it&#8217;s been marked up with tags
-or formatting instructions.</p></blockquote>
+<h4>代码的形式</h4>
 
-<p>This text your see here is <em>actually</em> written in Markdown! To get a feel for Markdown&#8217;s syntax, type some text into the left window and watch the results in the right.</p>
+<p>使用 4 个以上 空格或 1 个以上 的 tab 来标记代码段落，它们将被
+<code>&lt;pre&gt;</code> 和 <code>&lt;code&gt;</code> 包裹，这意味着代码段内的字体会是 monospace
+家族的，并且特殊符号不会被转义。</p>
 
-<p><strong>Get started by clearing the text with the button &#8216;Clear&#8217; in the top navigation.</strong></p>
+<p>如果要標記一小段行內程式碼，你可以用反引號把它包起來（`），例如：</p>
 
-<h2>Tech</h2>
+<pre><code>Use the `printf()` function.
+</code></pre>
 
-<p>Dillinger uses a number of open source projects to work properly:</p>
+<h4>强调</h4>
 
-<ul>
-<li>[Ace Editor] - awesome web-based text editor</li>
-<li>[Showdown] - a port of Markdown to JavaScript</li>
-<li>[Twitter Bootstrap] - great UI boilerplate for modern web apps</li>
-<li>[node.js] - evented I/O for the backend</li>
-<li>[Redis] - wickedly fast key-value data store</li>
-<li>[keymaster.js] - awesome keyboard handler lib by [@thomasfuchs]</li>
-<li>[jQuery] - duh</li>
-</ul>
+<pre><code>*single asterisks*
 
+_single underscores_
 
-<h2>Coming Soon</h2>
+**double asterisks**
 
-<p><strong>NOTE</strong>: currently the <code>app.js</code> file expects a Redis instance to be up and running and available. Dillinger currently uses Redis version <strong>2.4.4</strong>.  You will need to modify the <code>redis.conf</code> file if you are going to use an older version of Redis.</p>
+_double underscores__
+</code></pre>
 
-<h2>Installation</h2>
-
-<p>NOTE: currently the <code>app.js</code> file expects a Redis instance to be up and running and available.  It is used for session storage and will be used in the future.</p>
-
-<ol>
-<li>Clone the repo</li>
-<li><code>cd dillinger</code></li>
-<li><code>npm install -d</code> (also, if you don&#8217;t have <code>smoosh</code> installed globally execute: <code>npm install smoosh -g</code>)</li>
-<li><code>mkdir -p public/files</code></li>
-<li><code>mkdir -p public/files/md &amp;&amp; mkdir -p public/files/html</code></li>
-<li>Read the Readme file located at <code>config/README.md</code> and do what it says.</li>
-<li><code>redis-server config/redis.conf</code></li>
-<li><code>node build.js</code> as this will concat/compress the css and js files.</li>
-<li><code>sudo node app.js</code></li>
-<li><code>open http://127.0.0.1</code></li>
-</ol>
-
-
-<p>NOTE: Have a look at the <code>app.json</code> file as it has some configuration variables in there as well. You will definitely need to update the <code>IMAGE_PREFIX_PRODUCTION: "http://cdn.dillinger.io/"</code> to your own CDN. If you&#8217;re not using a CDN, set it&#8217;s path to <code>/img/</code> for that is where the images reside locally in the dillinger repo.</p>
-
-<p><em>Free Software, Fuck Yeah!</em></p>
+<p>貌似是不能改变字体颜色，小小遗憾</p>
 
 		
 		
@@ -166,7 +133,7 @@ or formatting instructions.</p></blockquote>
 	<div class="tags">
 
 
-	<a class='category' href='/blog/categories/test/'>test</a>
+	<a class='category' href='/blog/categories/markdown/'>Markdown</a>
 
 
 </div>
