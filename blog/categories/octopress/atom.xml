@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Pazzilivo]]></title>
-  <link href="http://Pazzilivo.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Octopress | Pazzilivo]]></title>
+  <link href="http://Pazzilivo.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://Pazzilivo.github.com/"/>
   <updated>2012-07-13T22:56:28+08:00</updated>
   <id>http://Pazzilivo.github.com/</id>
@@ -12,48 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Markdown 使用]]></title>
-    <link href="http://Pazzilivo.github.com/blog/2012/07/13/fuck/"/>
-    <updated>2012-07-13T16:09:00+08:00</updated>
-    <id>http://Pazzilivo.github.com/blog/2012/07/13/fuck</id>
-    <content type="html"><![CDATA[<p>今天刚刚安装成功了一个[Octopress]的blog，由于需要使用[Markdown]语法进行编辑，所以在网上查了一些资料学习了一下，我记录一些比较常用的。</p>
-
-<h4>标题的形式</h4>
-
-<pre><code># This is an H1
-
-## This is an H2
-
-###### This is an H6
-</code></pre>
-
-<h4>代码的形式</h4>
-
-<p>使用 4 个以上 空格或 1 个以上 的 tab 来标记代码段落，它们将被
-<code>&lt;pre&gt;</code> 和 <code>&lt;code&gt;</code> 包裹，这意味着代码段内的字体会是 monospace
-家族的，并且特殊符号不会被转义。</p>
-
-<p>如果要標記一小段行內程式碼，你可以用反引號把它包起來（`），例如：</p>
-
-<pre><code>Use the `printf()` function.
-</code></pre>
-
-<h4>强调</h4>
-
-<pre><code>*single asterisks*
-
-_single underscores_
-
-**double asterisks**
-
-_double underscores__
-</code></pre>
-
-<p>貌似是不能改变字体颜色，小小遗憾</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hello OctoPress]]></title>
