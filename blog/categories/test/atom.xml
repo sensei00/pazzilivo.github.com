@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Pazzilivo]]></title>
-  <link href="http://Pazzilivo.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: test | Pazzilivo]]></title>
+  <link href="http://Pazzilivo.github.com/blog/categories/test/atom.xml" rel="self"/>
   <link href="http://Pazzilivo.github.com/"/>
   <updated>2012-07-13T20:59:28+08:00</updated>
   <id>http://Pazzilivo.github.com/</id>
@@ -31,17 +31,17 @@
 
 <p>Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site] [1]:</p>
 
-<blockquote><p>The overriding design goal for Markdown&#8217;s
+<blockquote><p>The overriding design goal for Markdown's
 formatting syntax is to make it as readable
 as possible. The idea is that a
 Markdown-formatted document should be
 publishable as-is, as plain text, without
-looking like it&#8217;s been marked up with tags
+looking like it's been marked up with tags
 or formatting instructions.</p></blockquote>
 
-<p>This text your see here is <em>actually</em> written in Markdown! To get a feel for Markdown&#8217;s syntax, type some text into the left window and watch the results in the right.</p>
+<p>This text your see here is <em>actually</em> written in Markdown! To get a feel for Markdown's syntax, type some text into the left window and watch the results in the right.</p>
 
-<p><strong>Get started by clearing the text with the button &#8216;Clear&#8217; in the top navigation.</strong></p>
+<p><strong>Get started by clearing the text with the button 'Clear' in the top navigation.</strong></p>
 
 <h2>Tech</h2>
 
@@ -69,7 +69,7 @@ or formatting instructions.</p></blockquote>
 <ol>
 <li>Clone the repo</li>
 <li><code>cd dillinger</code></li>
-<li><code>npm install -d</code> (also, if you don&#8217;t have <code>smoosh</code> installed globally execute: <code>npm install smoosh -g</code>)</li>
+<li><code>npm install -d</code> (also, if you don't have <code>smoosh</code> installed globally execute: <code>npm install smoosh -g</code>)</li>
 <li><code>mkdir -p public/files</code></li>
 <li><code>mkdir -p public/files/md &amp;&amp; mkdir -p public/files/html</code></li>
 <li>Read the Readme file located at <code>config/README.md</code> and do what it says.</li>
@@ -80,18 +80,9 @@ or formatting instructions.</p></blockquote>
 </ol>
 
 
-<p>NOTE: Have a look at the <code>app.json</code> file as it has some configuration variables in there as well. You will definitely need to update the <code>IMAGE_PREFIX_PRODUCTION: "http://cdn.dillinger.io/"</code> to your own CDN. If you&#8217;re not using a CDN, set it&#8217;s path to <code>/img/</code> for that is where the images reside locally in the dillinger repo.</p>
+<p>NOTE: Have a look at the <code>app.json</code> file as it has some configuration variables in there as well. You will definitely need to update the <code>IMAGE_PREFIX_PRODUCTION: "http://cdn.dillinger.io/"</code> to your own CDN. If you're not using a CDN, set it's path to <code>/img/</code> for that is where the images reside locally in the dillinger repo.</p>
 
 <p><em>Free Software, Fuck Yeah!</em></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hello World]]></title>
-    <link href="http://Pazzilivo.github.com/blog/2012/07/13/hello-world/"/>
-    <updated>2012-07-13T15:40:00+08:00</updated>
-    <id>http://Pazzilivo.github.com/blog/2012/07/13/hello-world</id>
-    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
