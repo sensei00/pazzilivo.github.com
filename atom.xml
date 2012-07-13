@@ -4,7 +4,7 @@
   <title><![CDATA[Pazzilivo]]></title>
   <link href="http://Pazzilivo.github.com/atom.xml" rel="self"/>
   <link href="http://Pazzilivo.github.com/"/>
-  <updated>2012-07-13T22:22:43+08:00</updated>
+  <updated>2012-07-13T22:55:35+08:00</updated>
   <id>http://Pazzilivo.github.com/</id>
   <author>
     <name><![CDATA[Pazzilivo]]></name>
@@ -56,11 +56,74 @@ _double underscores__
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Hello World]]></title>
+    <title type="html"><![CDATA[Hello OctoPress]]></title>
     <link href="http://Pazzilivo.github.com/blog/2012/07/13/hello-world/"/>
     <updated>2012-07-13T15:40:00+08:00</updated>
     <id>http://Pazzilivo.github.com/blog/2012/07/13/hello-world</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p>折腾了两天，终于把Blog搭建好了，过程中遇到不少问题，非常感谢twitter上 <a href="https://twitter.com/lucifr">@lucifr</a> ， <a href="https://twitter.com/truthurt">@truthurt</a> ，<a href="https://twitter.com/clipppit">@clipppit</a>的热心帮助。</p>
+
+<p>总结一些过程中的问题主要有以下几点，希望在今后大家搭建的过程中有所帮助。</p>
+
+<h4>1.安装RVM</h4>
+
+<pre><code>bash -s stable &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+</code></pre>
+
+<p>Next add RVM to your shell as a function.</p>
+
+<pre><code>echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; . "$HOME/.rvm/scripts/rvm" # Load RVM function' &gt;&gt; ~/.bash_profile
+source ~/.bash_profile
+</code></pre>
+
+<p>Install Ruby 1.9.2 and ensure RVM has the latest RubyGems.</p>
+
+<pre><code>rvm install 1.9.2 &amp;&amp; rvm use 1.9.2
+rvm rubygems latest
+</code></pre>
+
+<h4>2.安装Octopress</h4>
+
+<pre><code>git clone git://github.com/imathis/octopress.git octopress
+cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
+ruby --version  # Should report Ruby 1.9.2
+</code></pre>
+
+<h4>3.再安点儿什么乱七八糟的</h4>
+
+<pre><code>gem install bundler
+rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
+bundle install
+</code></pre>
+
+<h4>4.安装默认主题</h4>
+
+<pre><code>rake install
+</code></pre>
+
+<h4>5.部署</h4>
+
+<p>申请一个你用户名命名的仓库地址，就像这样<code>username.github.com</code>，然后在终端里执行</p>
+
+<pre><code>rake setup_github_pages
+</code></pre>
+
+<p>然后让你输入一个地址，这样，用户名当然得换了，注意大小写，我就在这悲剧了。</p>
+
+<pre><code>git@github.com:username/username.github.com.git
+</code></pre>
+
+<p>静态化代码，部署</p>
+
+<pre><code>rake generate
+rake deploy
+</code></pre>
+
+<p>提交到source分支</p>
+
+<pre><code>git add .
+git commit -m 'your message'
+git push origin source
+</code></pre>
 ]]></content>
   </entry>
   
