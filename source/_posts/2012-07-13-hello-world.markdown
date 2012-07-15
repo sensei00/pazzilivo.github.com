@@ -1,71 +1,79 @@
-Dillinger
-=========
-
-Dillinger is a cloud-enabled HTML5 Markdown editor.
-
-  - Type some Markdown text in the left window
-  - See the HTML in the right
-  - Magic
-
-Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site] [1]:
-
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable 
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
-
-This text your see here is *actually* written in Markdown! To get a feel for Markdown's syntax, type some text into the left window and watch the results in the right.  
-
-**Get started by clearing the text with the button 'Clear' in the top navigation.**
-
-Tech
------------
-
-Dillinger uses a number of open source projects to work properly:
-
-* [Ace Editor] - awesome web-based text editor
-* [Showdown] - a port of Markdown to JavaScript
-* [Twitter Bootstrap] - great UI boilerplate for modern web apps
-* [node.js] - evented I/O for the backend
-* [Redis] - wickedly fast key-value data store
-* [keymaster.js] - awesome keyboard handler lib by [@thomasfuchs]
-* [jQuery] - duh 
-
-
-Coming Soon
---------------
-
-**NOTE**: currently the `app.js` file expects a Redis instance to be up and running and available. Dillinger currently uses Redis version **2.4.4**.  You will need to modify the `redis.conf` file if you are going to use an older version of Redis.
-
-
-Installation
---------------
-
-NOTE: currently the `app.js` file expects a Redis instance to be up and running and available.  It is used for session storage and will be used in the future.
-
-1. Clone the repo
-2. `cd dillinger`
-3. `npm install -d` (also, if you don't have `smoosh` installed globally execute: `npm install smoosh -g`)
-4. `mkdir -p public/files`
-5. `mkdir -p public/files/md && mkdir -p public/files/html`
-6. Read the Readme file located at `config/README.md` and do what it says.
-7. `redis-server config/redis.conf`
-8. `node build.js` as this will concat/compress the css and js files.
-9. `sudo node app.js`
-10. `open http://127.0.0.1`
-
-NOTE: Have a look at the `app.json` file as it has some configuration variables in there as well. You will definitely need to update the `IMAGE_PREFIX_PRODUCTION: "http://cdn.dillinger.io/"` to your own CDN. If you're not using a CDN, set it's path to `/img/` for that is where the images reside locally in the dillinger repo.
-
-
-*Free Software, Fuck Yeah!*
-
 ---
 layout: post
-title: "Hello World"
+title: "Hello OctoPress"
 date: 2012-07-13 15:40
 comments: true
-categories: 
+categories: Octopress
 ---
+折腾了两天，终于把Blog搭建好了，过程中遇到不少问题，非常感谢twitter上 [@lucifr](https://twitter.com/lucifr) ， [@truthurt](https://twitter.com/truthurt) ，[@clipppit](https://twitter.com/clipppit)的热心帮助。
+
+!["Octopress"](http://ww1.sinaimg.cn/large/62152bc3gw1duw7actx3pj.jpg)
+
+总结一些过程中的问题主要有以下几点，希望在今后大家搭建的过程中有所帮助。
+
+####1.安装RVM
+
+	bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+
+Next add RVM to your shell as a function.
+
+	echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.bash_profile
+	source ~/.bash_profile
+
+**PS.最好改一下配置文件，在主文件夹下边的 .bashrc文件，在最后加一行代码**
+
+	[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+
+Install Ruby 1.9.2 and ensure RVM has the latest RubyGems.
+
+	rvm install 1.9.2 && rvm use 1.9.2
+	rvm rubygems latest
+
+####2.安装Octopress
+
+	git clone git://github.com/imathis/octopress.git octopress
+	cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
+	ruby --version  # Should report Ruby 1.9.2
+
+####3.再安点儿什么乱七八糟的
+
+	gem install bundler
+	rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
+	bundle install
+
+####4.安装默认主题
+
+	rake install
+
+####5.部署
+
+申请一个你用户名命名的仓库地址，就像这样`username.github.com`，然后在终端里执行
+
+	rake setup_github_pages
+
+然后让你输入一个地址，这样，用户名当然得换了，注意大小写，我就在这悲剧了。
+
+	git@github.com:username/username.github.com.git
+
+静态化代码，部署
+
+	rake generate
+	rake deploy
+
+提交到source分支，-m换成你自己的 
+
+	git add .
+	git commit -m 'blog source' 
+	git push origin source
+
+####我的主题是安装的slash
+
+	$ cd octopress
+	$ git clone git://github.com/tommy351/Octopress-Theme-Slash.git .themes/slash
+	$ rake install['slash']
+	$ rake generate
+
+使用 zsh 時發生問題嗎？試試看`rake install\['slash'\]`。
+
+更多主题安装的问题可以参考[Slash — 專為 Octopress 設計的極簡主題](http://zespia.tw/blog/2012/01/25/slash-theme/)
+
