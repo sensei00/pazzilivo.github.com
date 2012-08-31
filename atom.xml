@@ -4,7 +4,7 @@
   <title><![CDATA[Pazzilivo]]></title>
   <link href="http://Pazzilivo.github.com/atom.xml" rel="self"/>
   <link href="http://Pazzilivo.github.com/"/>
-  <updated>2012-09-01T02:43:29+08:00</updated>
+  <updated>2012-09-01T02:44:42+08:00</updated>
   <id>http://Pazzilivo.github.com/</id>
   <author>
     <name><![CDATA[Pazzilivo]]></name>
@@ -18,7 +18,7 @@
     <link href="http://Pazzilivo.github.com/blog/2012/09/01/dotcloudapi/"/>
     <updated>2012-09-01T02:12:00+08:00</updated>
     <id>http://Pazzilivo.github.com/blog/2012/09/01/dotcloudapi</id>
-    <content type="html"><![CDATA[<p>前几个月经过 <a href="https://twitter.com/forzaRicky">@forzaRicky</a>提及到dotcloud可以搭建twitter的api，由于在ubuntu下搭建比较方便，苦于没有环境，一直没有折腾，前一阵因为想搞这个Blog，所以装了个Ubuntu，正好折腾一下，在搜索的过程中发现可以搭建TWIP4的api，甚是Happy。。。下边是教程，大部分参考<a href="https://twitter.com/soooulp">@sooulp</a>的Blog，但是也遇到了一些问题。</p>
+    <content type="html"><![CDATA[<p>前几个月经过<a href="https://twitter.com/forzaRicky">@forzaRicky</a>提及到dotcloud可以搭建twitter的api，由于在ubuntu下搭建比较方便，苦于没有环境，一直没有折腾，前一阵因为想搞这个Blog，所以装了个Ubuntu，正好折腾一下，在搜索的过程中发现可以搭建TWIP4的api，甚是Happy。。。下边是教程，大部分参考<a href="https://twitter.com/soooulp">@sooulp</a>的Blog，但是也遇到了一些问题。</p>
 
 <h4>1.在ubuntu终端上安装dotcloud客户端</h4>
 
