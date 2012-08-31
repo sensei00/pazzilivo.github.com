@@ -4,7 +4,7 @@
   <title><![CDATA[Category: twitter | Pazzilivo]]></title>
   <link href="http://Pazzilivo.github.com/blog/categories/twitter/atom.xml" rel="self"/>
   <link href="http://Pazzilivo.github.com/"/>
-  <updated>2012-09-01T02:41:59+08:00</updated>
+  <updated>2012-09-01T02:43:29+08:00</updated>
   <id>http://Pazzilivo.github.com/</id>
   <author>
     <name><![CDATA[Pazzilivo]]></name>
@@ -51,7 +51,7 @@ $ dotcloud -h ##查看命令详解
 
 <h4>3.Twip的配置</h4>
 
-<p>下载twip4压缩包<a href="http://loui.tk/wp-content/uploads/2012/02/yegle-twip-feb8726.zip">yegle-twip-feb8726.zip</a>，解压到主文件夹，修改key，secret，basic url值（格式为https://xxxx-usename.dotcloud.com/,xxxx为上一步创建的app名，切记后面的/不能少）
+<p>下载twip4压缩包<a href="http://loui.tk/wp-content/uploads/2012/02/yegle-twip-feb8726.zip">yegle-twip-feb8726.zip</a>，解压到主文件夹，修改key，secret，basic-url值（格式为https://xxxx-usename.dotcloud.com/,xxxx为上一步创建的app名，切记后面的/不能少）
 然后在文件夹内添加新文档，内容为</p>
 
 <pre><code>if (!-e $request_filename){rewrite ^/(.*)$ /index.php last;}
