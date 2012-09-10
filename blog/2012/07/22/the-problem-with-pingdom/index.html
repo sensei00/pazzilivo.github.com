@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>使用Dotcloud搭建Twip4的twitter API - Pazzilivo</title>
+  <title>The problem with Pingdom - Pazzilivo</title>
   <meta name="author" content="Pazzilivo">
 
   
-  <meta name="description" content="使用Dotcloud搭建Twip4的twitter API Sep 1st, 2012 | Comments 前几个月经过@forzaRicky提及到dotcloud可以搭建twitter的api，由于在ubuntu下搭建比较方便，苦于没有环境，一直没有折腾，前一阵因为想搞这个Blog， &hellip;">
+  <meta name="description" content="The Problem With Pingdom Jul 22nd, 2012 | Comments Time to be Awesome - awesome.rb 1
+puts &quot;Awesome!&quot; unless lame The problem with pingdom &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://Pazzilivo.github.com/blog/2012/09/01/dotcloudapi/">
+  <link rel="canonical" href="http://Pazzilivo.github.com/blog/2012/07/22/the-problem-with-pingdom/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -100,7 +101,7 @@
   
   <header>
     
-      <h2 class="entry-title">使用Dotcloud搭建Twip4的twitter API</h2>
+      <h2 class="entry-title">The Problem With Pingdom</h2>
     
     
       <p class="meta">
@@ -116,7 +117,7 @@
   
 
 
-<time datetime="2012-09-01T02:12:00+08:00" pubdate data-updated="true">Sep 1<span>st</span>, 2012</time>
+<time datetime="2012-07-22T19:13:00+08:00" pubdate data-updated="true">Jul 22<span>nd</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -125,75 +126,30 @@
   </header>
 
 
-<p>前几个月经过<a href="https://twitter.com/forzaRicky">@forzaRicky</a>提及到dotcloud可以搭建twitter的api，由于在ubuntu下搭建比较方便，苦于没有环境，一直没有折腾，前一阵因为想搞这个Blog，所以装了个Ubuntu，正好折腾一下，在搜索的过程中发现可以搭建TWIP4的api，甚是Happy。</p>
 
-<p>下边是教程，大部分参考<a href="https://twitter.com/soooulp">@sooulp</a>的Blog，但是也遇到了一些问题。</p>
 
-<h4>1.在ubuntu终端上安装dotcloud客户端</h4>
+<figure class='code'><figcaption><span>Time to be Awesome - awesome.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="nb">puts</span> <span class="s2">&quot;Awesome!&quot;</span> <span class="k">unless</span> <span class="n">lame</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<p>首先请确认你的python版本至少是2.6版的，如果不是2.6版本，请更新你的python。</p>
 
-<pre><code>$ python -V
-</code></pre>
+<p><a href="http://www.pingdom.com%20Pingdom">The problem with pingdom.</a></p>
 
-<p>安装有setuptools开发包的请使用easy_install安装DotCloud:</p>
+<p>My money&#8217;s in that office, right? If she start giving me some bullshit about it ain&#8217;t there, and we got to go someplace else and get it, I&#8217;m gonna shoot you in the head then and there. Then I&#8217;m gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I&#8217;m talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>
 
-<pre><code>$ sudo easy_install dotcloud //官方推荐方式
-</code></pre>
+<blockquote><p>Blockquote is what goes
+inside this block here
+would you believe that
+bullshit?</p></blockquote>
 
-<p>如果没有setuptools开发包请使用下面的方式安装DotCloud客户端：</p>
+<p>Well, the way they make shows is, they make one show. That show&#8217;s called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they&#8217;re going to make more shows. Some pilots get picked and become television programs. Some don&#8217;t, become nothing. She starred in one of the ones that became nothing.</p>
 
-<pre><code>$ sudo apt-get install python-pip   //基于Debian的系统，获取pip(原pyinstall)
-$ sudo pip install dotcloud       //通过pip安装DotCloud
-</code></pre>
+<p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother&#8217;s keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
 
-<h4>2.配置dotcloud</h4>
+<p>Your bones don&#8217;t break, mine do. That&#8217;s clear. Your cells react to bacteria and viruses differently than mine. You don&#8217;t get sick, I do. That&#8217;s also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We&#8217;re on the same curve, just on opposite ends.</p>
 
-<pre><code>$ dotcloud ##输入的apikey，在网页上找到。
-$ dotcloud -h ##查看命令详解
-</code></pre>
-
-<p>然后创建application</p>
-
-<pre><code>$ dotcloud create xxxx //Created application "xxxx"
-</code></pre>
-
-<h4>3.Twip的配置</h4>
-
-<p>下载twip4压缩包<a href="http://loui.tk/wp-content/uploads/2012/02/yegle-twip-feb8726.zip">yegle-twip-feb8726.zip</a>，解压到主文件夹，修改key，secret，basic-url值（格式为https://xxxx-usename.dotcloud.com/,xxxx为上一步创建的app名，切记后面的/不能少）
-然后在文件夹内添加新文档，内容为</p>
-
-<pre><code>if (!-e $request_filename){rewrite ^/(.*)$ /index.php last;}
-</code></pre>
-
-<p>然后命名为 <code>nginx.conf</code>
-新建文档，内容为</p>
-
-<pre><code>www:
-  type: php //注意前边是两个空格，不能用tab键                                                                          
-</code></pre>
-
-<p>命名为<code>dotcloud.yml</code></p>
-
-<h4>4.文件部署</h4>
-
-<p>在终端进twip文件所在文件夹，然后上传文件</p>
-
-<pre><code>cd /home/user/yegle-twip-feb8726 dotcloud push xxxx
-</code></pre>
-
-<p>user为系统用户名，xxxx同为app应用名
-上传好后，会提示</p>
-
-<pre><code>Deployment finished. Your application is available at the following URLs www: http://xxxx-usename.dotcloud.com/
-</code></pre>
-
-<p>然后浏览器访问这个地址，会显示空白，然后再访问</p>
-
-<pre><code>http://xxxx-usename.dotcloud.com/index.html
-</code></pre>
-
-<p>出现twip4界面，搭建成功。</p>
+<p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that&#8217;s what you see at a toy store. And you must think you&#8217;re in a toy store, because you&#8217;re here shopping for an infant named Jeb.</p>
 
 
 
@@ -219,8 +175,8 @@ $ dotcloud -h ##查看命令详解
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://Pazzilivo.github.com/blog/2012/09/01/dotcloudapi/';
-        var disqus_url = 'http://Pazzilivo.github.com/blog/2012/09/01/dotcloudapi/';
+        var disqus_identifier = 'http://Pazzilivo.github.com/blog/2012/07/22/the-problem-with-pingdom/';
+        var disqus_url = 'http://Pazzilivo.github.com/blog/2012/07/22/the-problem-with-pingdom/';
         var disqus_script = 'embed.js';
       
     (function () {
