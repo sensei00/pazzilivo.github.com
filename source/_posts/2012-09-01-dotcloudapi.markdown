@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "使用Dotcloud搭建Twip4的twitter API"
+title: "使用 Dotcloud 搭建 Twip4 的 Twitter API"
 date: 2012-09-01 02:12
 comments: true
 categories: twitter

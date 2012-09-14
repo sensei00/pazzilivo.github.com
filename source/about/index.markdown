@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "about"
-date: 2012-07-24 03:16
-comments: false
-sharing: false
-footer: false
+title: "about me"
+date: 2012-07-13 15:10
+comments: true
+sharing: true
+footer: true
 ---
 89闷骚男，待业中，求职前端攻城师♪，在[Google](https://www.google.com)上搜到的Pazzilivo全是我 
 

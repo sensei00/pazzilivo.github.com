@@ -5,7 +5,7 @@ date: 2012-07-13 16:09
 comments: true
 categories: Markdown
 ---
-今天刚刚安装成功了一个[Octopress]的blog，由于需要使用[Markdown]语法进行编辑，所以在网上查了一些资料学习了一下，我记录一些比较常用的。
+今天刚刚安装成功了一个[Octopress]()的blog，由于需要使用[Markdown]()语法进行编辑，所以在网上查了一些资料学习了一下，我记录一些比较常用的。
 
 ####标题的形式
 
