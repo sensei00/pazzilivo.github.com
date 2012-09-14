@@ -1,35 +1,30 @@
 /*
-Syntax error: File to import not found or unreadable: susy.
-              Load paths:
-                /home/pazzilivo/pazzilivo.github.com/sass
-                /home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.1/frameworks/blueprint/stylesheets
-                /home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.1/frameworks/compass/stylesheets
-                Compass::SpriteImporter
-        on line 2 of /home/pazzilivo/pazzilivo.github.com/sass/lib/_grid.scss
-        from line 4 of /home/pazzilivo/pazzilivo.github.com/sass/lib/_base.scss
-        from line 6 of /home/pazzilivo/pazzilivo.github.com/sass/application.scss
-
-1: /home/pazzilivo/pazzilivo.github.com/sass/application.scss
+Syntax error: Undefined variable: "$adelle".
+        on line 32 of /home/pazzilivo/pazzilivo.github.com/sass/application.scss
 
 Backtrace:
-/home/pazzilivo/pazzilivo.github.com/sass/lib/_grid.scss:2
-/home/pazzilivo/pazzilivo.github.com/sass/lib/_base.scss:4
-/home/pazzilivo/pazzilivo.github.com/sass/application.scss:6
-/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/import_node.rb:64:in `rescue in import'
-/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/import_node.rb:42:in `import'
-/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/import_node.rb:25:in `imported_file'
-/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:149:in `rescue in visit_import'
-/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:154:in `visit_import'
+/home/pazzilivo/pazzilivo.github.com/sass/application.scss:32
+/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/script/variable.rb:49:in `_perform'
+/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/script/node.rb:40:in `perform'
+/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/script/list.rb:70:in `block in _perform'
+/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/script/list.rb:70:in `map'
+/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/script/list.rb:70:in `_perform'
+/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/script/node.rb:40:in `perform'
+/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/script/list.rb:70:in `block in _perform'
+/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/script/list.rb:70:in `map'
+/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/script/list.rb:70:in `_perform'
+/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/script/node.rb:40:in `perform'
+/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:216:in `visit_prop'
 /home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/base.rb:37:in `visit'
 /home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:146:in `block in visit_import'
-/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:146:in `map'
-/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:146:in `visit_import'
-/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/base.rb:37:in `visit'
-/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:146:in `block in visit_import'
-/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:146:in `map'
-/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:146:in `visit_import'
+/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/base.rb:53:in `map'
+/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:238:in `visit_rule'
 /home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/base.rb:37:in `visit'
 /home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:18:in `visit'
 /home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.1.18/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -73,4 +68,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: susy.\A               Load paths:\A                 /home/pazzilivo/pazzilivo.github.com/sass\A                 /home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.1/frameworks/blueprint/stylesheets\A                 /home/pazzilivo/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.1/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 2 of /home/pazzilivo/pazzilivo.github.com/sass/lib/_grid.scss\A         from line 4 of /home/pazzilivo/pazzilivo.github.com/sass/lib/_base.scss\A         from line 6 of /home/pazzilivo/pazzilivo.github.com/sass/application.scss\A \A 1: /home/pazzilivo/pazzilivo.github.com/sass/application.scss"; }
+  content: "Syntax error: Undefined variable: \"$adelle\".\A         on line 32 of /home/pazzilivo/pazzilivo.github.com/sass/application.scss"; }
