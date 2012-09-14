@@ -9,10 +9,23 @@
   <meta name="author" content="Pazzilivo">
 
   
-  <meta name="description" content=" JS-1 Aug 3rd, 2012 | Comments JS学习笔记 第一课 1
+  <meta name="description" content="JS-1 Aug 3rd, 2012 | Comments JS学习笔记 第一课 1
 2
-var a=0;
-a++; Comments Please enable JavaScript to view the comments powered by Disqus. ">
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+var Person = function(name, email, website){ this.name = name; this. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -137,8 +150,36 @@ a++; Comments Please enable JavaScript to view the comments powered by Disqus. "
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">a</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-</span><span class='line'><span class="nx">a</span><span class="o">++</span><span class="p">;</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">Person</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">email</span><span class="p">,</span> <span class="nx">website</span><span class="p">){</span>
+</span><span class='line'>    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">this</span><span class="p">.</span><span class="nx">email</span> <span class="o">=</span> <span class="nx">email</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">this</span><span class="p">.</span><span class="nx">website</span> <span class="o">=</span> <span class="nx">website</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">this</span><span class="p">.</span><span class="nx">sayHello</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">hello</span> <span class="o">=</span> <span class="s2">&quot;Hello, I&#39;m &quot;</span><span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span>  <span class="o">+</span> <span class="s2">&quot;, \n&quot;</span> <span class="o">+</span>
+</span><span class='line'>                    <span class="s2">&quot;my email is: &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">email</span> <span class="o">+</span> <span class="s2">&quot;, \n&quot;</span> <span class="o">+</span>
+</span><span class='line'>                    <span class="s2">&quot;my website is: &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">website</span><span class="p">;</span>
+</span><span class='line'>        <span class="nx">alert</span><span class="p">(</span><span class="nx">hello</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">};</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="nx">chenhao</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Chen Hao&quot;</span><span class="p">,</span> <span class="s2">&quot;haoel@hotmail.com&quot;</span><span class="p">,</span>
+</span><span class='line'>                                     <span class="s2">&quot;http://coolshell.cn&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="nx">chenhao</span><span class="p">.</span><span class="nx">sayHello</span><span class="p">();</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
