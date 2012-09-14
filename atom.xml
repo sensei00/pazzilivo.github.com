@@ -4,7 +4,7 @@
   <title><![CDATA[Pazzilivo]]></title>
   <link href="http://Pazzilivo.github.com/atom.xml" rel="self"/>
   <link href="http://Pazzilivo.github.com/"/>
-  <updated>2012-09-14T17:52:41+08:00</updated>
+  <updated>2012-09-14T17:57:06+08:00</updated>
   <id>http://Pazzilivo.github.com/</id>
   <author>
     <name><![CDATA[Pazzilivo]]></name>
@@ -98,6 +98,13 @@ $ dotcloud -h ##查看命令详解
     <content type="html"><![CDATA[<h4>JS学习笔记</h4>
 
 <p>第一课</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">a</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="nx">a</span><span class="o">++</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
 ]]></content>
   </entry>
   
