@@ -40,9 +40,12 @@ article.post figure.code{
 	margin-right: 50px;
 }
 #blog-archives article h1{
-	font-family: Rokkitt, serif;
-	
+	font-family: 'Contrail One', cursive;
 }
 #blog-archives article h1 a{
 	color: #A01115;
+}
+article h2 a:link, article h2 a:hover, article h2 a:visited, article h2 a:active, 
+article h2{
+	font-family: 'Contrail One', cursive;
 }

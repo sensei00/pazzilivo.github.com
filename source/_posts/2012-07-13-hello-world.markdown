@@ -60,11 +60,13 @@ Install Ruby 1.9.2 and ensure RVM has the latest RubyGems.
 	rake generate
 	rake deploy
 
-提交到source分支，-m换成你自己的 
+提交到source分支
 
 	git add .
 	git commit -m 'blog source' 
 	git push origin source
+
+原则很简单，只要记住`your_local_octopress_directory`对应的的remote source branch，而`_deploy`对应的是remote master branch即可。
 
 ####我的主题是安装的slash
 

@@ -25,6 +25,9 @@ categories: Markdown
 
 	Use the `printf()` function.
 
+如果知道是什么语言的话，可以用 ` ```javascript ` 这样包起来，结束是三个`
+
+
 ####强调
 
 	*single asterisks*
