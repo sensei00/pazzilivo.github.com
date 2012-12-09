@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Markdown | Pazzilivo]]></title>
   <link href="http://Pazzilivo.github.com/blog/categories/markdown/atom.xml" rel="self"/>
   <link href="http://Pazzilivo.github.com/"/>
-  <updated>2012-09-17T20:56:45+08:00</updated>
+  <updated>2012-12-09T12:15:36+08:00</updated>
   <id>http://Pazzilivo.github.com/</id>
   <author>
     <name><![CDATA[Pazzilivo]]></name>
@@ -39,6 +39,8 @@
 
 <pre><code>Use the `printf()` function.
 </code></pre>
+
+<p>如果知道是什么语言的话，可以用 <code>```javascript</code> 这样包起来，结束是三个`</p>
 
 <h4>强调</h4>
 

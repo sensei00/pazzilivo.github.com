@@ -196,12 +196,14 @@ bundle install
 rake deploy
 </code></pre>
 
-<p>提交到source分支，-m换成你自己的</p>
+<p>提交到source分支</p>
 
 <pre><code>git add .
 git commit -m 'blog source' 
 git push origin source
 </code></pre>
+
+<p>原则很简单，只要记住<code>your_local_octopress_directory</code>对应的的remote source branch，而<code>_deploy</code>对应的是remote master branch即可。</p>
 
 <h4>我的主题是安装的slash</h4>
 
