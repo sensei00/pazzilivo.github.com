@@ -4,7 +4,7 @@
   <title><![CDATA[Category: twitter | Pazzilivo]]></title>
   <link href="http://Pazzilivo.github.com/blog/categories/twitter/atom.xml" rel="self"/>
   <link href="http://Pazzilivo.github.com/"/>
-  <updated>2012-12-09T15:15:20+08:00</updated>
+  <updated>2012-12-12T22:15:00-08:00</updated>
   <id>http://Pazzilivo.github.com/</id>
   <author>
     <name><![CDATA[Pazzilivo]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[使用 Dotcloud 搭建 Twip4 的 Twitter API]]></title>
     <link href="http://Pazzilivo.github.com/blog/2012/09/01/dotcloudapi/"/>
-    <updated>2012-09-01T02:12:00+08:00</updated>
+    <updated>2012-09-01T02:12:00-07:00</updated>
     <id>http://Pazzilivo.github.com/blog/2012/09/01/dotcloudapi</id>
     <content type="html"><![CDATA[<p>前几个月经过<a href="https://twitter.com/forzaRicky">@forzaRicky</a>提及到dotcloud可以搭建twitter的api，由于在ubuntu下搭建比较方便，苦于没有环境，一直没有折腾，前一阵因为想搞这个Blog，所以装了个Ubuntu，正好折腾一下，在搜索的过程中发现可以搭建TWIP4的api，甚是Happy。</p>
 

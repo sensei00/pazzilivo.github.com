@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Markdown | Pazzilivo]]></title>
   <link href="http://Pazzilivo.github.com/blog/categories/markdown/atom.xml" rel="self"/>
   <link href="http://Pazzilivo.github.com/"/>
-  <updated>2012-12-09T15:15:20+08:00</updated>
+  <updated>2012-12-12T22:15:00-08:00</updated>
   <id>http://Pazzilivo.github.com/</id>
   <author>
     <name><![CDATA[Pazzilivo]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Markdown 使用]]></title>
     <link href="http://Pazzilivo.github.com/blog/2012/07/13/fuck/"/>
-    <updated>2012-07-13T16:09:00+08:00</updated>
+    <updated>2012-07-13T16:09:00-07:00</updated>
     <id>http://Pazzilivo.github.com/blog/2012/07/13/fuck</id>
     <content type="html"><![CDATA[<p>今天刚刚安装成功了一个<a href="">Octopress</a>的blog，由于需要使用<a href="">Markdown</a>语法进行编辑，所以在网上查了一些资料学习了一下，我记录一些比较常用的。</p>
 
