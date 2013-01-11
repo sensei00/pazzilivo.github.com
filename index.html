@@ -129,7 +129,7 @@
   
 
 
-<time datetime="2012-09-01T02:12:00-07:00" pubdate data-updated="true">Sep 1<span>st</span>, 2012</time>
+<time datetime="2012-09-01T02:12:00+08:00" pubdate data-updated="true">Sep 1<span>st</span>, 2012</time>
         
          | <a href="/blog/2012/09/01/dotcloudapi/#disqus_thread">Comments</a>
         
@@ -162,25 +162,31 @@ $ sudo pip install dotcloud       //通过pip安装DotCloud
 
 <h4>2.配置dotcloud</h4>
 
-<pre><code>$ dotcloud ##输入的apikey，在网页上找到。
-$ dotcloud -h ##查看命令详解
-</code></pre>
+<pre><code>$ dotcloud setup //按提示输入用户名密码
 
-<p>然后创建application</p>
-
-<pre><code>$ dotcloud create xxxx //Created application "xxxx"
+$ dotcloud create xxxx //Created application "xxxx"
 </code></pre>
 
 <h4>3.Twip的配置</h4>
 
-<p>下载twip4压缩包<a href="http://loui.tk/wp-content/uploads/2012/02/yegle-twip-feb8726.zip">yegle-twip-feb8726.zip</a>，解压到主文件夹，修改key，secret，basic-url值（格式为https://xxxx-usename.dotcloud.com/,xxxx为上一步创建的app名，切记后面的/不能少）
-然后在文件夹内添加新文档，内容为</p>
+<pre><code>$ git clone git@github.com:twip/twip.git twip //从github下载twip源码
+</code></pre>
+
+<p>修改key，secret，basic-url值（格式为https://xxxx-usename.dotcloud.com/,xxxx为上一步创建的app名，切记后面的/不能少）</p>
+
+<p>twip.php 第二行新建行输入</p>
+
+<pre><code>error_reporting(0); 
+</code></pre>
+
+<p>然后在文件夹内添加新文档，内容为</p>
 
 <pre><code>if (!-e $request_filename){rewrite ^/(.*)$ /index.php last;}
 </code></pre>
 
-<p>然后命名为 <code>nginx.conf</code>
-新建文档，内容为</p>
+<p>然后命名为 <code>nginx.conf</code></p>
+
+<p>新建文档，内容为</p>
 
 <pre><code>www:
   type: php //注意前边是两个空格，不能用tab键                                                                          
@@ -188,17 +194,15 @@ $ dotcloud -h ##查看命令详解
 
 <p>命名为<code>dotcloud.yml</code></p>
 
+<pre><code>$ dotcloud connect XXXX //与应用建立关联
+</code></pre>
+
 <h4>4.文件部署</h4>
 
 <p>在终端进twip文件所在文件夹，然后上传文件</p>
 
-<pre><code>cd /home/user/yegle-twip-feb8726 dotcloud push xxxx
-</code></pre>
-
-<p>user为系统用户名，xxxx同为app应用名
-上传好后，会提示</p>
-
-<pre><code>Deployment finished. Your application is available at the following URLs www: http://xxxx-usename.dotcloud.com/
+<pre><code>$ dotcloud push
+Deployment finished. Your application is available at the following URLs www: http://xxxx-usename.dotcloud.com/
 </code></pre>
 
 <p>然后浏览器访问这个地址，会显示空白，然后再访问</p>
@@ -245,7 +249,7 @@ $ dotcloud -h ##查看命令详解
   
 
 
-<time datetime="2012-07-13T16:09:00-07:00" pubdate data-updated="true">Jul 13<span>th</span>, 2012</time>
+<time datetime="2012-07-13T16:09:00+08:00" pubdate data-updated="true">Jul 13<span>th</span>, 2012</time>
         
          | <a href="/blog/2012/07/13/fuck/#disqus_thread">Comments</a>
         
@@ -328,7 +332,7 @@ _double underscores__
   
 
 
-<time datetime="2012-07-13T15:40:00-07:00" pubdate data-updated="true">Jul 13<span>th</span>, 2012</time>
+<time datetime="2012-07-13T15:40:00+08:00" pubdate data-updated="true">Jul 13<span>th</span>, 2012</time>
         
          | <a href="/blog/2012/07/13/hello-world/#disqus_thread">Comments</a>
         
