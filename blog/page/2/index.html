@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Pazzilivo</title>
+  <meta name="author" content="Pazzilivo">
+
+  
+  <meta name="description" content="Hello OctoPress Jul 13th, 2012 | Comments 折腾了两天，终于把Blog搭建好了，过程中遇到不少问题，非常感谢twitter上 @lucifr ， @truthurt ，@clipppit的热心帮助。 总结一些过程中的问题主要有以下几点， &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://Pazzilivo.github.com/blog/page/2/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Pazzilivo" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:500|Contrail+One' rel='stylesheet' type='text/css'>
+
+  
+
+</head>
+
+<body >
+  <header role="banner" id="sidebar">
+    <!-- Logo -->
+<aside id="logo" class="clearfix">
+  <div class="clearfix">
+    <a href="/">Pazzilivo</a>
+  </div>
+</aside>
+
+<ul id="menu">
+
+  <li class="title">
+    <h1 id="title"><a href="/">Pazzilivo</a></h1>
+  </li>
+
+
+  <li class="subtitle">
+    <h2 id="subtitle">sezie the day，make your lives extraordinary</h2>
+  </li>
+
+  <li class="link">
+    <a href="/about/">About</a>
+  </li>
+  <li class="link">
+    <a href="/blog/archives/">Archives</a>
+  </li>
+
+  <li class="link">
+    <a href="http://twitter.com/pazzilivo/">Twitter</a>
+  </li>
+
+
+  <li class="link rss">
+    <a href="/atom.xml">RSS feed</a>
+  </li>
+</ul>
+
+
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:Pazzilivo.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+
+
+<!-- Octopress Love -->
+<aside id="octopress_linkback">
+  <a href="http://octopress.org/">
+    <span class="unicode_square">
+      <span class="unicode_circle">
+        &nbsp;
+      </span>
+    </span>
+    <span class="octopress">
+		Powered by Octopress in 2012	   
+    </span>
+  </a>
+</aside>
+
+  </header>
+  <section id="main">
+      
+  
+  
+    <article class="post">
+      <div class="sharing-box">
+  
+  
+  
+</div>
+
+      
+  <header>
+    
+      <h2 class="entry-title">
+        
+        <a href="/blog/2012/07/13/hello-world/">Hello OctoPress</a>
+        
+      </h2>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-13T15:40:00+08:00" pubdate data-updated="true">Jul 13<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/13/hello-world/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <p>折腾了两天，终于把Blog搭建好了，过程中遇到不少问题，非常感谢twitter上 <a href="https://twitter.com/lucifr">@lucifr</a> ， <a href="https://twitter.com/truthurt">@truthurt</a> ，<a href="https://twitter.com/clipppit">@clipppit</a>的热心帮助。</p>
+
+<p><img src="http://ww1.sinaimg.cn/large/62152bc3gw1duw7actx3pj.jpg" alt="&quot;Octopress&quot;" /></p>
+
+<p>总结一些过程中的问题主要有以下几点，希望在今后大家搭建的过程中有所帮助。</p>
+
+<h4>1.安装RVM</h4>
+
+<pre><code>bash -s stable &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+</code></pre>
+
+<p>Next add RVM to your shell as a function.</p>
+
+<pre><code>echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; . "$HOME/.rvm/scripts/rvm" # Load RVM function' &gt;&gt; ~/.bash_profile
+source ~/.bash_profile
+</code></pre>
+
+<p><strong>PS.最好改一下配置文件，在主文件夹下边的 .bashrc文件，在最后加一行代码</strong></p>
+
+<pre><code>[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+</code></pre>
+
+<p>Install Ruby 1.9.2 and ensure RVM has the latest RubyGems.</p>
+
+<pre><code>rvm install 1.9.2 &amp;&amp; rvm use 1.9.2
+rvm rubygems latest
+</code></pre>
+
+<h4>2.安装Octopress</h4>
+
+<pre><code>git clone git://github.com/imathis/octopress.git octopress
+cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
+ruby --version  # Should report Ruby 1.9.2
+</code></pre>
+
+<h4>3.再安点儿什么乱七八糟的</h4>
+
+<pre><code>gem install bundler
+rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
+bundle install
+</code></pre>
+
+<h4>4.安装默认主题</h4>
+
+<pre><code>rake install
+</code></pre>
+
+<h4>5.部署</h4>
+
+<p>申请一个你用户名命名的仓库地址，就像这样<code>username.github.com</code>，然后在终端里执行</p>
+
+<pre><code>rake setup_github_pages
+</code></pre>
+
+<p>然后让你输入一个地址，这样，用户名当然得换了，注意大小写，我就在这悲剧了。</p>
+
+<pre><code>git@github.com:username/username.github.com.git
+</code></pre>
+
+<p>静态化代码，部署</p>
+
+<pre><code>rake generate
+rake deploy
+</code></pre>
+
+<p>提交到source分支</p>
+
+<pre><code>git add .
+git commit -m 'blog source' 
+git push origin source
+</code></pre>
+
+<p>原则很简单，只要记住<code>your_local_octopress_directory</code>对应的的remote source branch，而<code>_deploy</code>对应的是remote master branch即可。</p>
+
+<h4>我的主题是安装的slash</h4>
+
+<pre><code>$ cd octopress
+$ git clone git://github.com/tommy351/Octopress-Theme-Slash.git .themes/slash
+$ rake install['slash']
+$ rake generate
+</code></pre>
+
+<p>使用 zsh 時發生問題嗎？試試看<code>rake install\['slash'\]</code>。</p>
+
+<p>更多主题安装的问题可以参考<a href="http://zespia.tw/blog/2012/01/25/slash-theme/">Slash — 專為 Octopress 設計的極簡主題</a></p>
+
+  
+  
+
+
+    </article>
+  
+
+    <nav role="navigation" id="pagination">
+
+  <span class="prev">
+    <a href="/" rel="prev">Newer &larr;</a>
+  </span>
+
+</nav>
+  </section>
+  
+
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'pazzilivo';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+</body>
+</html>

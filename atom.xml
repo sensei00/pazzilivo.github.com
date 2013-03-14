@@ -4,7 +4,7 @@
   <title><![CDATA[Pazzilivo]]></title>
   <link href="http://Pazzilivo.github.com/atom.xml" rel="self"/>
   <link href="http://Pazzilivo.github.com/"/>
-  <updated>2013-02-25T15:53:26+08:00</updated>
+  <updated>2013-03-14T17:59:30+08:00</updated>
   <id>http://Pazzilivo.github.com/</id>
   <author>
     <name><![CDATA[Pazzilivo]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[google Reader Die]]></title>
+    <link href="http://Pazzilivo.github.com/blog/2013/03/14/google-reader-die/"/>
+    <updated>2013-03-14T17:35:00+08:00</updated>
+    <id>http://Pazzilivo.github.com/blog/2013/03/14/google-reader-die</id>
+    <content type="html"><![CDATA[<p>今天 Google 宣布2005年就发布的 Google Reader将在2013年7月1日关闭，Google给出的理由是用户数量逐年下降。Google没有给出替代方案，让用户自己去寻找RSS阅读器替代品，未来四个月里可使用Google Takeout来导出Google Reader里的RSS订阅。</p>
+
+<p>也是在今天习总当选国家主席。</p>
+
+<p>两件事没什么联系，只是记录。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[使用 Dotcloud 搭建 Twip4 的 Twitter API]]></title>
