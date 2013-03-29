@@ -1,8 +1,10 @@
+.idea
 .bundle
 .DS_Store
 .sass-cache
 .gist-cache
 .pygments-cache
+*.iml
 _deploy
 public
 sass.old
