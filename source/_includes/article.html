@@ -18,14 +18,6 @@
 {% if index %}
     {{ content | excerpt }}
     {% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
-    {% unless page.meta == false %}
-        <p class="meta">
-        {% include post/date.html %}{{ time }}
-        {% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
-        | <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments</a>
-        {% endif %}
-        </p>
-    {% endunless %}
     {% if excerpted == 'true' %}
         <footer>
           <a rel="full-article" href="{{ root_url }}{{ post.url }}">{{ site.excerpt_link }}</a>
@@ -34,3 +26,11 @@
 {% else %}
 {{ content }}
 {% endif %}
+{% unless page.meta == false %}
+<p class="meta">
+    {% include post/date.html %}{{ time }}
+    {% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
+    | <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments</a>
+    {% endif %}
+</p>
+{% endunless %}
