@@ -1,11 +1,12 @@
-$body-bg: white;
-$noise-bg: image-url('noise.png') top left !default;
+$body-bg: #23262b;
+$noise-bg: red;
 
 // Main Link Colors
-$link-color: lighten(black, 3) !default;
+$link-color: #c63d1a;
 
 // Main Section Colors
-$text-color: #222 !default;
+$header-text-color: #47bad8;
+$text-color: #fff !default;
 $text-color-light: #aaa !default;
 $type-border: #ddd !default;
 

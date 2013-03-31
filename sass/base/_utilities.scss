@@ -6,6 +6,12 @@
   }
 }
 
+@mixin center-control($width, $margin-l: auto, $margin-r: auto){
+  width: $width;
+  margin-left: $margin-l;
+  margin-right: $margin-r;
+}
+
 /* clearfix utility class */
 .clearfix:before,
 .clearfix:after {

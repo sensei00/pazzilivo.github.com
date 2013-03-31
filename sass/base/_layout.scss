@@ -1,4 +1,4 @@
-$min-width: 895px;
+$max-width: 790px;
 $logo-height: 110px;
 $logo-width: 110px;
 $logo-radius: 10px;
@@ -7,18 +7,8 @@ $logo-inner-width: 90px;
 $logo-inner-radius: 50%;
 
 body {
-  min-width: $min-width;
   font-size: 1em;
   line-height: 1.4;
-}
-
-#sidebar {
-  width: 27%;
-  padding-left: 1.5%;
-  min-width: 240px;
-  position: fixed;
-  min-height: 100%;
-  z-index: 1;
 }
 
 aside#logo {
@@ -146,10 +136,16 @@ header#sidebar h2#subtitle {
 }
 
 // Large screen
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    @include center-control($max-width);
+    margin-top: 110px;
+  }
+
   #sidebar {
-    margin-left: 0;
-    padding-left: 2%;
+    float: left;
+    width: 320px;
+    margin-top: 50px;
   }
 
   aside#logo {
