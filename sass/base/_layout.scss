@@ -31,14 +31,6 @@ aside#logo div {
   clear: both;
 }
 
-aside#logo div a {
-  display: block;
-  clear: both;
-  width: 78px;
-  height: 78px;
-  margin: 0 auto;
-  margin-top: 6px;
-}
 
 ul#menu {
   clear: both;
@@ -108,18 +100,6 @@ header#sidebar h1#title {
   z-index: 9999;
 }
 
-header#sidebar h1#title a {
-  font-family: sans-serif;
-  font-weight: 900;
-  font-size: 30px;
-  line-height: 30px;
-  border: none;
-  padding: 0;
-  display: block;
-  color: black;
-  margin-left: 0;
-}
-
 header#sidebar h2#subtitle {
   font-weight: 300;
   font-size: 16px;
@@ -165,11 +145,6 @@ header#sidebar h2#subtitle {
   ul#menu {
     max-width: 300px;
     width: 65%;
-  }
-
-  header#sidebar h1#title a {
-    font-size: 35px;
-    line-height: 35px;
   }
 
   header#sidebar h2#subtitle {
