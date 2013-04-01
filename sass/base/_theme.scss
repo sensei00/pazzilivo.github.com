@@ -89,12 +89,7 @@ article h2 {
 }
 
 article h2 a:link, article h2 a:hover, article h2 a:visited, article h2 a:active {
-  color: black;
+  color: $header-text-color;;
   text-decoration: none;
   border-bottom: 1px solid #CCC;
-  font-family: "Rokkitt", sans-serif;
-  font-size: 22px;
-  line-height: 32px;
-  font-weight: 700;
-  -webkit-font-smoothing: antialiased;
 }
