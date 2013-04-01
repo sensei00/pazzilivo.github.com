@@ -44,6 +44,7 @@ ul {
 }
 
 #blog_author a {
+  color: $header-text-color;
   text-shadow: $text-shadow;
   @include transition(0.2s, ease-in);
 }

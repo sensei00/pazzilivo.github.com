@@ -20,7 +20,7 @@
   background-image: -ms-image-set(url($normal-image) 1x,url($retina-image) 2x);
 }
 
-@mixin transition($property: all, $duration, $timing-function){
+@mixin transition($duration, $timing-function, $property: all){
   -webkit-transition: $property $duration $timing-function;
   -moz-transition: $property $duration $timing-function;
   -o-transition: $property $duration $timing-function;
