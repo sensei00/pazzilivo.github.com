@@ -11,16 +11,12 @@ body {
   line-height: 1.4;
 }
 
-aside#logo {
-  position: relative;
+#title a {
+  text-indent: -999em;
+  @include background-image('/images/avatar.png', '/images/avatar@2x.png');
+  height: 52px;
+  width: 52px;
   display: block;
-  width: $logo-width;
-  height: $logo-height;
-  border-radius: $logo-radius;
-  -moz-border-radius: $logo-radius;
-  -webkit-border-radius: $logo-radius;
-  margin-left: 30px;
-  margin-top: 40px;
 }
 
 aside#logo div {
@@ -142,6 +138,7 @@ header#sidebar h2#subtitle {
     margin-top: 110px;
   }
 
+
   #sidebar {
     float: left;
     width: 320px;
@@ -181,21 +178,8 @@ header#sidebar h2#subtitle {
   }
 }
 
-// Short screen
-@media only screen and (max-height: 650px) {
-  #sidebar {
-    position: absolute;
-  }
-
-  #octopress_linkback {
-    top: 700px;
-    position: absolute;
-  }
-}
-
 // Medium-width screen
-@media only screen and (max-width: 630px),
-  (device-height: 1024px) and (device-width: 768px) and (orientation: portrait) {
+@media only screen and (max-width: 630px) and (orientation: portrait) {
   body { min-width: 0; }
 
   #sidebar {

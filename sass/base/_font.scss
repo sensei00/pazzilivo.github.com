@@ -15,3 +15,13 @@ $font-icon-path: "/font/fontawesome-webfont";
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+  font-family: ChineseMixEnglish;
+  src: local(STHeiti);
+}
+@font-face {
+  font-family: ChineseMixEnglish;
+  src: local(Rokkitt);
+  unicode-range: U+00-7F;
+}
