@@ -43,6 +43,11 @@ ul {
   list-style-type: none;
 }
 
+.blog_info {
+  font-size: 19px;
+  line-height: 1.5em;
+}
+
 #blog_author a {
   color: $header-text-color;
   text-shadow: $text-shadow;
@@ -74,9 +79,9 @@ article a:link, article a:visited, article a:hover, article a:active {
 }
 
 article h2 {
-  color: black;
+  color: $header-text-color;
   text-decoration: none;
-  font-family: "Rokkitt", serif;
+  font-family: ChineseMixEnglish;
   font-size: 22px;
   line-height: 32px;
   font-weight: 700;

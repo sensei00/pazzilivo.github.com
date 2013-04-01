@@ -6,11 +6,6 @@ $logo-inner-height: 90px;
 $logo-inner-width: 90px;
 $logo-inner-radius: 50%;
 
-body {
-  font-size: 1em;
-  line-height: 1.4;
-}
-
 #title a {
   text-indent: -999em;
   @include background-image('/images/avatar.png', '/images/avatar@2x.png');
@@ -18,19 +13,6 @@ body {
   width: 52px;
   display: block;
 }
-
-aside#logo div {
-  border-radius: $logo-inner-radius;
-  -moz-border-radius: $logo-inner-radius;
-  -webkit-border-radius: $logo-inner-radius;
-  width: $logo-inner-width;
-  height: $logo-inner-height;
-  text-indent: -9999px;
-  margin: 0 auto;
-  margin-top: 10px;
-  clear: both;
-}
-
 
 ul#menu {
   clear: both;
@@ -63,16 +45,6 @@ ul#menu a {
 
 ul#menu li.title {
   margin-bottom: 0;
-}
-
-ul#menu li.subtitle {
-  margin-top: 0;
-}
-
-header#sidebar h1#title {
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 15px;
 }
 
 #octopress_linkback {
@@ -118,28 +90,10 @@ header#sidebar h2#subtitle {
     margin-top: 110px;
   }
 
-
   #sidebar {
     float: left;
     width: 320px;
     margin-top: 50px;
-  }
-
-  aside#logo {
-    width: 165px;
-    height: 165px;
-  }
-
-  aside#logo div {
-    width: 135px;
-    height: 135px;
-    margin-top: 15px;
-  }
-
-  aside#logo div a {
-    width: 117px;
-    height: 117px;
-    margin-top: 9px;
   }
 
   ul#menu {
@@ -147,10 +101,6 @@ header#sidebar h2#subtitle {
     width: 65%;
   }
 
-  header#sidebar h2#subtitle {
-    font-size: 20px;
-    line-height: 25px;
-  }
 }
 
 // Medium-width screen
