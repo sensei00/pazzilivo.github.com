@@ -61,11 +61,6 @@ header input {
     margin-top: 50px;
   }
 
-  ul#menu {
-    max-width: 300px;
-    width: 65%;
-  }
-
 }
 
 // Medium-width screen
@@ -156,7 +151,8 @@ header input {
 
 // Articles
 article.post {
-  margin: 30px 15px 60px;
+  margin: 40px 15px 0;
+  padding-bottom: 40px;
 }
 
 section.comments {
@@ -171,7 +167,7 @@ article.post h2, article.post p {
 
 article.post img {
   width: 490px;
-  margin: 10px 0 10px-55px;
+  margin: 10px 0 10px -55px;
 }
 article.post figure {
   max-width: 500px;
@@ -187,7 +183,6 @@ h2.entry-title a.anchor {
 // Navigation
 nav#pagination {
   padding: 40px;
-  border-top: 1px solid #E2E2E2;
   padding-bottom: 70px;
 }
 
