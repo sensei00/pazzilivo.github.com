@@ -56,9 +56,21 @@ article.post p {
   text-indent: 2em;
   line-height: 21px;
 }
+article.post p.meta{
+  text-indent: 0;
+  margin-top: 3em;
+}
+
 article.post p code {
   text-indent: 0;
 }
+
+.comments h1,
+.comments h2 {
+  font-size: 1em;
+  line-height: 2em;
+}
+
 p, blockquote, ul, ol { margin-bottom: 1.5em; }
 
 ul { list-style-type: disc;

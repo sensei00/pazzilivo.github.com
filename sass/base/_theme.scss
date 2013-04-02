@@ -100,3 +100,8 @@ article h2 a:hover {
   border-left: 2px solid $link-color;
   padding-left: 5px;
 }
+
+.comments h1,
+.comments h2 {
+  color: $header-text-color;
+}
