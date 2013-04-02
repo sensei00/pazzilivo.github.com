@@ -6,6 +6,10 @@ $logo-inner-height: 90px;
 $logo-inner-width: 90px;
 $logo-inner-radius: 50%;
 
+#title {
+  margin-bottom: 0.5em;
+}
+
 #title a {
   text-indent: -999em;
   @include background-image('/images/avatar.png', '/images/avatar@2x.png');
@@ -14,6 +18,12 @@ $logo-inner-radius: 50%;
   display: block;
 }
 
+#separator {
+  background: #1d1e21;
+  height: 2px;
+  z-index: 0;
+  margin-top: 10px;
+}
 ul#menu {
   clear: both;
   margin: 0;
