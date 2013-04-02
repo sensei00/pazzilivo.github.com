@@ -1,12 +1,12 @@
 $body-bg: #23262b;
-$noise-bg: red;
+$noise-bg: #002b36;
 
 // Main Link Colors
 $link-color: #c63d1a;
 
 // Main Section Colors
 $header-text-color: #47bad8;
-$text-color: #fff !default;
+$text-color: #000 !default;
 $text-color-light: #aaa !default;
 $text-shadow: 0px 2px rgba(0,0,0,0.31);
 $type-border: #ddd !default;
@@ -43,11 +43,6 @@ ul {
   list-style-type: none;
 }
 
-.blog_info {
-  font-size: 19px;
-  line-height: 1.5em;
-}
-
 #blog_author a {
   color: $header-text-color;
   text-shadow: $text-shadow;
@@ -62,34 +57,38 @@ ul {
   color: #ffdc64;
   text-shadow: $text-shadow;
 }
-/* Menu */
-ul#menu a {
-  color: #999;
+
+#octopress_linkback a {
+  color: $text-color-light;
+  @include transition(0.2s, ease-in); 
 }
 
-#octopress_linkback {
-  background-color: rgba(255, 255, 255, 0.7);
+#octopress_linkback a:hover {
+  color: $text-color;
 }
+
 /* Article rules */
+#main {
+  background-color: #fff;
+}
+
 article a:link, article a:visited, article a:hover, article a:active {
   text-decoration: none;
   border-bottom: 1px solid #CCC;
-  border-bottom: 1px solid #CCC;
-  color: #002e03;
+  color: $link-color;
 }
 
 article h2 {
   color: $header-text-color;
   text-decoration: none;
-  font-family: ChineseMixEnglish;
-  font-size: 22px;
-  line-height: 32px;
-  font-weight: 700;
-  -webkit-font-smoothing: antialiased;
 }
 
 article h2 a:link, article h2 a:hover, article h2 a:visited, article h2 a:active {
   color: $header-text-color;;
   text-decoration: none;
-  border-bottom: 1px solid #CCC;
+}
+
+#blog-archives article {
+  border-left: 2px solid $link-color;
+  padding-left: 5px;
 }

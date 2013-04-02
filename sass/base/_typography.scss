@@ -31,13 +31,27 @@ h1 {
 
 header h3 {
   font-size: 1em;
+  font-weight: bold;
   line-height: 1.5em;
 }
 
 header h4 {
-  font-size: 0.9em;
+  font-size: 0.7em;
 }
 
+header ul {
+  font-size: 0.75em;
+}
+
+article.post p {
+  font-size: 0.75em;
+  margin-bottom: 0.5em;
+  text-indent: 2em;
+  line-height: 21px;
+}
+article.post p code {
+  text-indent: 0;
+}
 p, blockquote, ul, ol { margin-bottom: 1.5em; }
 
 ul { list-style-type: disc;
@@ -75,7 +89,7 @@ pre, code, tt { @extend .mono; }
 
 sub, sup { line-height: 0; }
 
-hr { margin-bottom: 0.2em; }
+hr { margin-bottom: .2em; }
 
 small { font-size: .8em; }
 
@@ -127,6 +141,21 @@ blockquote {
   margin: .5em 1.5em 1em 0;
 }
 
+#blog-archives article {
+  margin: 20px 0;  
+}
+
+#blog-archives article h1 {
+  font-size: 1em;
+  margin-bottom: .5em;
+}
+
+#blog-archives article time {
+  font-size: .75em;
+}
+#blog-archives article footer {
+  font-size: .6em
+}
 /* @extend this to force long lines of continuous text to wrap */
 .force-wrap {
   white-space: -moz-pre-wrap;
