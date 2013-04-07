@@ -6,6 +6,35 @@
   }
 }
 
+@mixin center-control($width, $margin-l: auto, $margin-r: auto){
+  width: $width;
+  margin-left: $margin-l;
+  margin-right: $margin-r;
+}
+
+@mixin background-image($normal-image, $retina-image){
+  background-image: url($normal-image);
+  background-image: -webkit-image-set(url($normal-image) 1x,url($retina-image) 2x);
+  background-image: -moz-image-set(url($normal-image) 1x,url($retina-image) 2x);
+  background-image: -o-image-set(url($normal-image) 1x,url($retina-image) 2x);
+  background-image: -ms-image-set(url($normal-image) 1x,url($retina-image) 2x);
+}
+
+@mixin transition($duration, $timing-function, $property: all){
+  -webkit-transition: $property $duration $timing-function;
+  -moz-transition: $property $duration $timing-function;
+  -o-transition: $property $duration $timing-function;
+  -ms-transition: $property $duration $timing-function;
+  transition: $property $duration $timing-function;
+}
+
+@mixin transform-scale($number){
+  -webkit-transform: scale($number);
+  -moz-transform: scale($number);
+  -o-transform: scale($number);
+  -ms-transform: scale($number);
+  transform: scale($number);
+}
 /* clearfix utility class */
 .clearfix:before,
 .clearfix:after {

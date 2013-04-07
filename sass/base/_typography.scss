@@ -1,8 +1,8 @@
 $blockquote: $type-border !default;
-$sans: "Karla", "Helvetica Neue", Arial, sans-serif !default;
+$sans: 'Open Sans', sans-serif !default;
 $serif: "PT Serif", Georgia, Times, "Times New Roman", serif !default;
 $mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
-$heading-font-family: "PT Serif", "Georgia", "Helvetica Neue", Arial, sans-serif !default;
+$heading-font-family: 'Open Sans', sans-serif !default;
 $header-title-font-family: $heading-font-family !default;
 $header-subtitle-font-family: $heading-font-family !default;
 
@@ -13,18 +13,6 @@ $header-subtitle-font-family: $heading-font-family !default;
 .sans { font-family: $sans; }
 .serif { font-family: $serif; }
 .mono { font-family: $mono; }
-
-body > header h1 {
-  font-size: 2.2em;
-  @extend .heading;
-  font-family: $header-title-font-family;
-  font-weight: normal;
-  line-height: 1.2em;
-  margin-bottom: 0.6667em;
-}
-body > header h2 {
-  font-family: $header-subtitle-font-family;
-}
 
 body {
   line-height: 1.5em;
@@ -41,27 +29,48 @@ h1 {
   h1 { font-size: 2.6em; line-height: 1.2em; }
 }
 
-#{headings()}{
-  @extend .heading;
-  text-rendering: optimizelegibility;
-  margin-bottom: 1em;
+header h3 {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+header h4 {
+  font-size: 0.7em;
+}
+
+header ul {
+  font-size: 0.75em;
+}
+
+
+article h4 {
+  font-size: .75em;
+  margin-bottom: .75em;
   font-weight: bold;
 }
-h2, section h1 {
-  font-size: 1.5em;
+
+article.post p {
+  font-size: 0.75em;
+  margin-bottom: 0.5em;
+  text-indent: 2em;
+  line-height: 21px;
 }
-h3, section h2, section section h1 {
-  font-size: 1.3em;
+article.post p.meta{
+  text-indent: 0;
+  margin-top: 3em;
 }
-h4, section h3, section section h2, section section section h1 {
+
+article.post p code {
+  text-indent: 0;
+}
+
+.comments h1,
+.comments h2 {
   font-size: 1em;
+  line-height: 2em;
 }
-h5, section h4, section section h3 {
-  font-size: .9em;
-}
-h6, section h5, section section h4, section section section h3 {
-  font-size: .8em;
-}
+
 p, blockquote, ul, ol { margin-bottom: 1.5em; }
 
 ul { list-style-type: disc;
@@ -99,7 +108,7 @@ pre, code, tt { @extend .mono; }
 
 sub, sup { line-height: 0; }
 
-hr { margin-bottom: 0.2em; }
+hr { margin-bottom: .2em; }
 
 small { font-size: .8em; }
 
@@ -151,6 +160,21 @@ blockquote {
   margin: .5em 1.5em 1em 0;
 }
 
+#blog-archives article {
+  margin: 20px 0;  
+}
+
+#blog-archives article h1 {
+  font-size: 1em;
+  margin-bottom: .5em;
+}
+
+#blog-archives article time {
+  font-size: .75em;
+}
+#blog-archives article footer {
+  font-size: .6em
+}
 /* @extend this to force long lines of continuous text to wrap */
 .force-wrap {
   white-space: -moz-pre-wrap;

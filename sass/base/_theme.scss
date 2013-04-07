@@ -1,12 +1,14 @@
-$body-bg: white;
-$noise-bg: image-url('noise.png') top left !default;
+$body-bg: #23262b;
+$noise-bg: #002b36;
 
 // Main Link Colors
-$link-color: lighten(black, 3) !default;
+$link-color: #c63d1a;
 
 // Main Section Colors
-$text-color: #222 !default;
+$header-text-color: #47bad8;
+$text-color: #23262b !default;
 $text-color-light: #aaa !default;
+$text-shadow: 0px 2px rgba(0,0,0,0.31);
 $type-border: #ddd !default;
 
 /* General rules */
@@ -29,6 +31,11 @@ a, a:visited {
   color: $link-color;
   text-decoration: none;
   outline: 0;
+  @include transition(0.2s, ease-in);
+}
+
+a:hover {
+  color: $header-text-color;
 }
 
 li {
@@ -41,56 +48,60 @@ ul {
   list-style-type: none;
 }
 
-// Logo
-aside#logo {
-  background-color: red;
+#blog_author a {
+  color: $header-text-color;
+  text-shadow: $text-shadow;
+  @include transition(0.2s, ease-in);
 }
 
-aside#logo div {
-  background-color: white;
+#blog_author a:hover {
+  color: $text-color-light;
 }
 
-aside#logo div a {
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  background: red url(/images/star_large.png) center center no-repeat;
-  background-size: 100% 100%;
+#position {
+  color: #ffdc64;
+  text-shadow: $text-shadow;
 }
 
-/* Menu */
-ul#menu a {
-  color: #999;
+#octopress_linkback a {
+  color: $text-color-light;
 }
 
-#octopress_linkback {
-  background-color: rgba(255, 255, 255, 0.7);
-}
 /* Article rules */
-article a:link, article a:visited, article a:hover, article a:active {
+#main {
+  background-color: #fff;
+}
+
+article a:link, article a:visited, article a:active {
   text-decoration: none;
   border-bottom: 1px solid #CCC;
-  border-bottom: 1px solid #CCC;
-  color: #002e03;
+  color: $link-color;
+  @include transition(0.2s, ease-in);
+}
+
+article a:hover {
+  color: $header-text-color;
 }
 
 article h2 {
-  color: black;
+  color: $header-text-color;
   text-decoration: none;
-  font-family: "Rokkitt", serif;
-  font-size: 22px;
-  line-height: 32px;
-  font-weight: 700;
-  -webkit-font-smoothing: antialiased;
 }
 
-article h2 a:link, article h2 a:hover, article h2 a:visited, article h2 a:active {
-  color: black;
+article h2 a:link, article h2 a:visited, article h2 a:active {
+  color: $header-text-color;;
   text-decoration: none;
-  border-bottom: 1px solid #CCC;
-  font-family: "Rokkitt", serif;
-  font-size: 22px;
-  line-height: 32px;
-  font-weight: 700;
-  -webkit-font-smoothing: antialiased;
+}
+article h2 a:hover {
+  color: $link-color;
+}
+
+#blog-archives article {
+  border-left: 2px solid $link-color;
+  padding-left: 5px;
+}
+
+.comments h1,
+.comments h2 {
+  color: $header-text-color;
 }
