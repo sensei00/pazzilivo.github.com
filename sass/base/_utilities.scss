@@ -28,6 +28,13 @@
   transition: $property $duration $timing-function;
 }
 
+@mixin transform-scale($number){
+  -webkit-transform: scale($number);
+  -moz-transform: scale($number);
+  -o-transform: scale($number);
+  -ms-transform: scale($number);
+  transform: scale($number);
+}
 /* clearfix utility class */
 .clearfix:before,
 .clearfix:after {

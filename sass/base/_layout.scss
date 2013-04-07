@@ -18,6 +18,10 @@ $logo-inner-radius: 50%;
   display: block;
 }
 
+#title a:hover {
+  @include transform-scale(1.1);
+}
+
 #separator {
   background: #1d1e21;
   height: 2px;
@@ -49,7 +53,7 @@ header input {
 }
 
 // Large screen
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 790px) {
   .wrapper {
     @include center-control($max-width);
     margin-top: 110px;
@@ -61,47 +65,30 @@ header input {
     margin-top: 50px;
   }
 
+ article.post img {
+   width: 490px;
+   margin: 10px 0 20px -55px;
+ }
 }
 
 // Medium-width screen
-@media only screen and (max-width: 630px) and (orientation: portrait) {
+@media only screen and (max-width: 790px) and (orientation: portrait) {
   body { min-width: 0; }
 
   #sidebar {
-    position: relative;
     width: 100%;
     text-align: center;
     margin: 0;
     padding: 0;
   }
 
-  aside#logo {
-    margin: 0 auto;
-    position: relative;
-    left: auto;
-    right: auto;
-    margin-top: 20px;
-    margin-bottom: 0;
+  #title a {
+    margin: 40px auto 20px;
   }
 
-  ul#menu {
-    width: auto;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-  }
-
-  ul#menu li.link {
+  #nav li {
     display: inline-block;
-    float: none;
-    width: auto;
-    clear: none;
-    margin: 0;
-    margin-bottom: 5px;
-  }
-
-  ul#menu li.rss {
-    display: none;
+    width: 80px;
   }
 
   section#main {
@@ -121,6 +108,14 @@ header input {
     overflow: hidden;
   }
 
+  section #blog-archives article {
+     padding: 0;
+   }
+
+  #blog-archives article time,
+  #blog-archives article footer {
+    padding-left: 15px;
+  }
   article p, article h2, article h1, article h3, article h4, article h5, article h6 {
     padding-right: 10px;
     padding-left: 15px;
@@ -138,13 +133,18 @@ header input {
     overflow: hidden;
   }
 
+  article.post img {
+    width: 85%;
+    margin: 20px auto;
+  }
+
   article.post figure {
     padding-right: 10px;
     padding-left: 15px;
     width: 90%;
   }
 
-  aside#octopress_linkback {
+  #octopress_linkback {
     display: none;
   }
 }
@@ -166,10 +166,13 @@ article.post h2, article.post p {
 }
 
 article.post img {
-  width: 490px;
-  margin: 10px 0 10px -55px;
   -webkit-box-shadow: 0px 2px 3px rgba(0,0,0,0.6);
+  @include transition(0.2s, ease-in);
 }
+article.post img:hover {
+  @include transform-scale(1.1);
+}
+
 article.post figure {
   max-width: 500px;
 }
