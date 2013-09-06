@@ -1,0 +1,25 @@
+---
+layout: post
+title: "My Wish List"
+date: 2013-09-06 13:56
+comments: true
+categories: personal
+---
+
+###2013 Wish List
+ 
+####Mac Apps
+* Tweetbot for Mac
+* Readkit
+
+####Hardware
+* 机械键盘
+* 显示器转接线
+
+####日用品
+* 冬天穿的鞋 （最好是三叶草的贝壳鞋）
+
+####Others
+* Vps或者APN （Vps最好）
+
+to be continue
