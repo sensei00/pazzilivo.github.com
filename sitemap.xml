@@ -2,34 +2,42 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://Pazzilivo.github.com/blog/2012/07/13/hello-world/</loc>
-        <lastmod>2012-12-13T14:11:30+08:00</lastmod>
+        <lastmod>2013-09-06T14:56:23+08:00</lastmod>
     </url>
     <url>
         <loc>http://Pazzilivo.github.com/blog/2012/07/13/fuck/</loc>
-        <lastmod>2012-12-13T14:11:30+08:00</lastmod>
+        <lastmod>2013-09-06T14:56:23+08:00</lastmod>
     </url>
     <url>
         <loc>http://Pazzilivo.github.com/blog/2012/09/01/dotcloudapi/</loc>
-        <lastmod>2013-01-11T14:07:59+08:00</lastmod>
+        <lastmod>2013-09-06T14:56:23+08:00</lastmod>
     </url>
     <url>
         <loc>http://Pazzilivo.github.com/blog/2013/03/14/google-reader-die/</loc>
-        <lastmod>2013-03-14T17:58:15+08:00</lastmod>
+        <lastmod>2013-09-06T14:56:23+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://Pazzilivo.github.com/blog/2013/07/25/time-goes-by/</loc>
+        <lastmod>2013-09-06T14:56:23+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://Pazzilivo.github.com/blog/2013/09/06/wish-list/</loc>
+        <lastmod>2013-09-06T14:56:23+08:00</lastmod>
     </url>
     <url>
         <loc>http://Pazzilivo.github.com/about/</loc>
-        <lastmod>2012-12-13T14:11:30+08:00</lastmod>
+        <lastmod>2013-09-06T14:56:23+08:00</lastmod>
     </url>
     <url>
         <loc>http://Pazzilivo.github.com/blog/archives/</loc>
-        <lastmod>2013-03-14T17:58:15+08:00</lastmod>
+        <lastmod>2013-09-06T14:56:23+08:00</lastmod>
     </url>
     <url>
         <loc>http://Pazzilivo.github.com/</loc>
-        <lastmod>2013-03-14T17:58:15+08:00</lastmod>
+        <lastmod>2013-09-06T14:56:23+08:00</lastmod>
     </url>
     <url>
         <loc>http://Pazzilivo.github.com/about-me/</loc>
-        <lastmod>2012-12-13T14:11:30+08:00</lastmod>
+        <lastmod>2013-09-06T14:56:23+08:00</lastmod>
     </url>
 </urlset>

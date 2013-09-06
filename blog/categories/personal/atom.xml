@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: personal | Pazzilivo]]></title>
+  <link href="http://Pazzilivo.github.com/blog/categories/personal/atom.xml" rel="self"/>
+  <link href="http://Pazzilivo.github.com/"/>
+  <updated>2013-09-06T14:58:25+08:00</updated>
+  <id>http://Pazzilivo.github.com/</id>
+  <author>
+    <name><![CDATA[Pazzilivo]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[My Wish List]]></title>
+    <link href="http://Pazzilivo.github.com/blog/2013/09/06/wish-list/"/>
+    <updated>2013-09-06T13:56:00+08:00</updated>
+    <id>http://Pazzilivo.github.com/blog/2013/09/06/wish-list</id>
+    <content type="html"><![CDATA[<h3>2013 Wish List</h3>
+
+<h4>Mac Apps</h4>
+
+<ul>
+<li>Tweetbot for Mac</li>
+<li>Readkit</li>
+</ul>
+
+
+<h4>Hardware</h4>
+
+<ul>
+<li>机械键盘</li>
+<li>显示器转接线</li>
+</ul>
+
+
+<h4>日用品</h4>
+
+<ul>
+<li>冬天穿的鞋 （最好是三叶草的贝壳鞋）</li>
+</ul>
+
+
+<h4>Others</h4>
+
+<ul>
+<li>Vps或者APN （Vps最好）</li>
+</ul>
+
+
+<p>to be continue</p>
+]]></content>
+  </entry>
+  
+</feed>

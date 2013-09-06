@@ -4,7 +4,7 @@
   <title><![CDATA[Pazzilivo]]></title>
   <link href="http://Pazzilivo.github.com/atom.xml" rel="self"/>
   <link href="http://Pazzilivo.github.com/"/>
-  <updated>2013-03-14T17:59:30+08:00</updated>
+  <updated>2013-09-06T14:58:25+08:00</updated>
   <id>http://Pazzilivo.github.com/</id>
   <author>
     <name><![CDATA[Pazzilivo]]></name>
@@ -12,6 +12,60 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[My Wish List]]></title>
+    <link href="http://Pazzilivo.github.com/blog/2013/09/06/wish-list/"/>
+    <updated>2013-09-06T13:56:00+08:00</updated>
+    <id>http://Pazzilivo.github.com/blog/2013/09/06/wish-list</id>
+    <content type="html"><![CDATA[<h3>2013 Wish List</h3>
+
+<h4>Mac Apps</h4>
+
+<ul>
+<li>Tweetbot for Mac</li>
+<li>Readkit</li>
+</ul>
+
+
+<h4>Hardware</h4>
+
+<ul>
+<li>机械键盘</li>
+<li>显示器转接线</li>
+</ul>
+
+
+<h4>日用品</h4>
+
+<ul>
+<li>冬天穿的鞋 （最好是三叶草的贝壳鞋）</li>
+</ul>
+
+
+<h4>Others</h4>
+
+<ul>
+<li>Vps或者APN （Vps最好）</li>
+</ul>
+
+
+<p>to be continue</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[忘了想说什么~]]></title>
+    <link href="http://Pazzilivo.github.com/blog/2013/07/25/time-goes-by/"/>
+    <updated>2013-07-25T22:44:00+08:00</updated>
+    <id>http://Pazzilivo.github.com/blog/2013/07/25/time-goes-by</id>
+    <content type="html"><![CDATA[<p>不知道为什么今天想起来写blog~，然后华丽的忘记了我想要说什么了，那就这样吧，最近状态不好，身体也不好，早晚都得死~</p>
+
+<p>推荐个美剧： <strong>Person of Interest</strong></p>
+
+<p>好像又没钱了呢。。。不知道钱怎么没的。。。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[google Reader Die]]></title>
