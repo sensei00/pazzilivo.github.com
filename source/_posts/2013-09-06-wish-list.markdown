@@ -10,7 +10,7 @@ categories: personal
  
 ####Mac Apps
 * Tweetbot for Mac
-* Readkit
+* Readkit (buy for 12RMB)
 * OS X 10.9
 
 ####Hardware
