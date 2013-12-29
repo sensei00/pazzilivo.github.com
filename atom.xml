@@ -4,7 +4,7 @@
   <title><![CDATA[Pazzilivo]]></title>
   <link href="http://Pazzilivo.github.com/atom.xml" rel="self"/>
   <link href="http://Pazzilivo.github.com/"/>
-  <updated>2013-09-26T00:11:44+08:00</updated>
+  <updated>2013-12-29T14:29:03+08:00</updated>
   <id>http://Pazzilivo.github.com/</id>
   <author>
     <name><![CDATA[Pazzilivo]]></name>
@@ -14,6 +14,15 @@
 
   
   <entry>
+    <title type="html"><![CDATA[2013 Review]]></title>
+    <link href="http://Pazzilivo.github.com/blog/2013/12/29/2013-review/"/>
+    <updated>2013-12-29T14:26:00+08:00</updated>
+    <id>http://Pazzilivo.github.com/blog/2013/12/29/2013-review</id>
+    <content type="html"><![CDATA[<p>to be edit</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[My Wish List]]></title>
     <link href="http://Pazzilivo.github.com/blog/2013/09/06/wish-list/"/>
     <updated>2013-09-06T13:56:00+08:00</updated>
@@ -21,35 +30,35 @@
     <content type="html"><![CDATA[<h4>Mac Apps</h4>
 
 <ul>
-<li>Tweetbot for Mac</li>
-<li>Readkit (buy for 12RMB)</li>
-<li>OS X 10.9</li>
+<li>Tweetbot for Mac &#8211; $19.99</li>
+<li>Readkit &#8211; $1.99</li>
+<li>OS X 10.9 &#8211; Free</li>
 </ul>
 
 
 <h4>Hardware</h4>
 
 <ul>
-<li>机械键盘</li>
-<li>显示器转接线</li>
+<li>机械键盘 &#8211; 谢谢王总</li>
+<li>显示器转接线 &#8211; 好像没什么用，没买</li>
 </ul>
 
 
 <h4>日用品</h4>
 
 <ul>
-<li>冬天穿的鞋 （最好是三叶草的贝壳鞋）</li>
+<li>冬天穿的鞋 &#8211; 三叶草</li>
 </ul>
 
 
 <h4>Others</h4>
 
 <ul>
-<li>Vps或者APN （Vps最好）</li>
+<li>Vps或者APN &#8211; 6 Month Apn for 60 RMB</li>
 </ul>
 
 
-<p>to be continue</p>
+<p>心愿达成</p>
 ]]></content>
   </entry>
   
