@@ -4,7 +4,7 @@
   <title><![CDATA[Pazzilivo]]></title>
   <link href="http://Pazzilivo.github.com/atom.xml" rel="self"/>
   <link href="http://Pazzilivo.github.com/"/>
-  <updated>2013-12-29T14:29:03+08:00</updated>
+  <updated>2014-01-01T22:24:24+08:00</updated>
   <id>http://Pazzilivo.github.com/</id>
   <author>
     <name><![CDATA[Pazzilivo]]></name>
@@ -18,7 +18,48 @@
     <link href="http://Pazzilivo.github.com/blog/2013/12/29/2013-review/"/>
     <updated>2013-12-29T14:26:00+08:00</updated>
     <id>http://Pazzilivo.github.com/blog/2013/12/29/2013-review</id>
-    <content type="html"><![CDATA[<p>to be edit</p>
+    <content type="html"><![CDATA[<p>我的2013年回顾</p>
+
+<h3>一、工作和技术</h3>
+
+<p>   今年工作主要是两大块，上半年是7699，下半年主要在写广告系统。</p>
+
+<p>   写7699所带给我的收获主要是编码规范和前端基础上的提高。写广告系统主要写了两大部分，一部分是前端部分，一部分是后台部分。前端部分因为没有任何依赖，所以只能用原生js写，后台部分主要用的Bootstrap。广告系统是我完全经历的一个项目，积累了些经验，有了些许提高。但是整体来说还是工作不饱和~。</p>
+
+<p>   年中的时候老金带我写了pusher，初步了接触了Node.js, backbone。自己空闲的时间也在学一些前端的新技术，整体上前端的更新很快，需要不断的学习。很多时候向read it later里存的东西变成了read it never，好羞愧～</p>
+
+<h3>二、生活</h3>
+
+<p>   大事件一: 和王总开始了新的冒险~</p>
+
+<p>   啊，好像没有大事件二。。。</p>
+
+<p>   跟公司去旅游了两次，一次去青岛，一次去滑雪~，去青岛真的好没意思。。。滑雪还是挺好玩儿的~</p>
+
+<p>   九月份回了秦皇岛一次，见到了大学宿舍的小伙伴。。。LOL~</p>
+
+<p>   今年买了好多电子产品，第一台 MBP，第一部 Nexus 手机，还买了个iPod~
+   年底给妈买了iPad mini 2~~</p>
+
+<p>   还养了小喵~</p>
+
+<h3>三、一些人</h3>
+
+<p>   谢谢 <a href="https://twitter.com/tingCris">王总</a> 本着人道主义精神给我做饭。。还有 <a href="https://twitter.com/YOC_YOC">凤姐</a>。 很佩服王总的忍耐限度。。。恩</p>
+
+<p>   谢谢 <a href="http://twitter.com/simamy">金总</a> 教我很多东西，生活上很关心我。。。当然还有其他同事也帮助我很多东西~</p>
+
+<p>   谢谢各位室友不杀之恩。。。感恩的心~</p>
+
+<p>   和以前的同学联系的挺少的。。。shame</p>
+
+<h3>四、2014</h3>
+
+<p>   希望克服拖延症，看到的东西想看的马上看完，别特么存了，存了也特么的不看，shit</p>
+
+<p>   拜佛祖，耶稣，默罕默德，求2014少写bug。。</p>
+
+<p>   希望家里人不要生病。爷爷奶奶身体好~</p>
 ]]></content>
   </entry>
   
