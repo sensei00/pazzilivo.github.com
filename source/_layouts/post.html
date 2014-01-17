@@ -11,7 +11,7 @@ single: true
         <header class="layout-single-column">
             <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
             <h2 class="post-summary">{{ page.summary }}</h2>
-            <h3 class="post-cate">Post in {{ page.categories }}</h3>
+            {% if page.categories %}<h3 class="post-cate">Post in {{ page.categories }}</h3>{% endif %}
         </header>
         {% endunless %}
     </div>
@@ -25,7 +25,7 @@ single: true
     <header>
         <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
         <h2 class="post-summary">{{ page.summary }}</h2>
-        <h3 class="post-cate">Post in {{ page.categories | category_links }}</h3>
+        {% if page.categories %}<h3 class="post-cate">Post in {{ page.categories | category_links }}</h3>{% endif %}
     </header>
     {% endunless %}
 </div>

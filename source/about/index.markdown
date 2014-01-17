@@ -1,27 +1,11 @@
 ---
-layout: page
+layout: post
 title: "about me"
 date: 2012-07-13 15:10
 comments: true
 sharing: true
 footer: true
+categories:
 ---
-!["高斯林"](http://ww3.sinaimg.cn/mw690/62152bc3gw1dwwhgrpxhtj.jpg)
 
-89闷骚男，待业中，求职前端攻城师♪
-
-在[Google](https://www.google.com)上搜到的 Pazzilivo 全是我 
-
-[Twitter](https://twitter.com/pazzilivo)间歇性话痨，早年活动于 [豆瓣](http://www.douban.com/people/Pazzilivo/)
-
-A.C. Milan 死忠
-
-Web开发,ie去死
-
-看美剧，常年翻墙
-
-[4SQ](https://foursquare.com/pazzilivo)
-
-DefyPlus
-
-Instagram
+猥琐少年自行脑补
