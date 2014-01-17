@@ -1,8 +1,30 @@
-$body-bg: #23262b;
+/* _theme.sass */
+// New theme colors
+$m-color-highlight: #57AD68;
+
+// text
+$t-color: #333332;
+$t-color-darker: #666665;
+$t-color-darkest: #B3B3B1;
+
+// buttons
+$bt-color-light: #53A663;
+$bt-color-dark: #8E8E8C;
+$bt-border-color-light: #A9D8B2;
+$bt-border-color-dark: #DEDEDC;
+$bt-color-darker: #B3B3B1;
+
+// bg
+$bg-color-dark: #F9F9F9;
+$bg-color: #fff;
 $noise-bg: #002b36;
 
+// border
+$bor-color: #f2f2f0;
+$bor-color-dark: #b3b3b1;
+
 // Main Link Colors
-$link-color: #c63d1a;
+$link-color: #53A663;
 
 // Main Section Colors
 $header-text-color: #47bad8;
@@ -13,95 +35,34 @@ $type-border: #ddd !default;
 
 /* General rules */
 body {
-  background-color: $body-bg;
+  background-color: $bg-color;
 }
-
-h1 {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-top: 20px;
-}
-
-a, a:visited {
-  color: $link-color;
+a {
+  color: $t-color;
   text-decoration: none;
+}
+
+.dark-horizon {
+  background: $bor-color;
+  border: 0;
+  border-top: 1px;
+  height: 1px;
+  margin: 20px auto 30px;
+}
+.btn {
+  display: inline-block;
   outline: 0;
-  @include transition(0.2s, ease-in);
+  color: $bt-color-dark;
+  border: 1px solid $bt-border-color-dark;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 999em;
+  padding: 0 20px;
+  font-weight: 300;
+  font-size: 12px;
+  @include transition(.2s, ease)
 }
-
-a:hover {
-  color: $header-text-color;
-}
-
-li {
-  line-height: 18px;
-  margin-bottom: 12px;
-}
-
-ul {
-  display: block;
-  list-style-type: none;
-}
-
-#blog_author a {
-  color: $header-text-color;
-  text-shadow: $text-shadow;
-  @include transition(0.2s, ease-in);
-}
-
-#blog_author a:hover {
-  color: $text-color-light;
-}
-
-#position {
-  color: #ffdc64;
-  text-shadow: $text-shadow;
-}
-
-#octopress_linkback a {
-  color: $text-color-light;
-}
-
-/* Article rules */
-#main {
-  background-color: #fff;
-}
-
-article a:link, article a:visited, article a:active {
-  text-decoration: none;
-  border-bottom: 1px solid #CCC;
-  color: $link-color;
-  @include transition(0.2s, ease-in);
-}
-
-article a:hover {
-  color: $header-text-color;
-}
-
-article h2 {
-  color: $header-text-color;
-  text-decoration: none;
-}
-
-article h2 a:link, article h2 a:visited, article h2 a:active {
-  color: $header-text-color;;
-  text-decoration: none;
-}
-article h2 a:hover {
-  color: $link-color;
-}
-
-#blog-archives article {
-  border-left: 2px solid $link-color;
-  padding-left: 5px;
-}
-
-.comments h1,
-.comments h2 {
-  color: $header-text-color;
+.btn:hover {
+  border: 1px solid $bt-color-dark;
 }

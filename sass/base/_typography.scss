@@ -1,8 +1,8 @@
-$blockquote: $type-border !default;
-$sans: 'Open Sans', sans-serif !default;
-$serif: "PT Serif", Georgia, Times, "Times New Roman", serif !default;
+/* _fonts */
+$sans: 'Gudea', sans-serif !default;
+$serif: "Cardo", Georgia, Times, "Times New Roman", serif !default;
 $mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
-$heading-font-family: 'Open Sans', sans-serif !default;
+$heading-font-family: 'Gudea', sans-serif !default;
 $header-title-font-family: $heading-font-family !default;
 $header-subtitle-font-family: $heading-font-family !default;
 
@@ -15,60 +15,34 @@ $header-subtitle-font-family: $heading-font-family !default;
 .mono { font-family: $mono; }
 
 body {
-  line-height: 1.5em;
-  color: $text-color;
+  font-size: 22px;
+  line-height: 1.4em;
+  webkit-font-smoothing: antialiased;
+  letter-spacing: -0.02em;
   @extend .sans;
 }
-h1 {
-  font-size: 2.2em;
-  line-height: 1.2em;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
 }
-
+h1{
+  font-size: 1.8em;
+}
+h2{
+  font-size: 1.5em;
+}
+h3{
+  font-size: 1.3em;
+}
+//.entry-title a {
+//  font-size: 28px;
+//  font-weight: 700;
+//  letter-spacing: -0.02em;
+//  line-height: 1.1;
+//  margin-bottom: 4px;
+//}
 @media only screen and (min-width: 992px) {
-  body { font-size: 1.15em; }
+  body { font-size: 1.3em; }
   h1 { font-size: 2.6em; line-height: 1.2em; }
-}
-
-header h3 {
-  font-size: 1em;
-  font-weight: bold;
-  line-height: 1.5em;
-}
-
-header h4 {
-  font-size: 0.7em;
-}
-
-header ul {
-  font-size: 0.75em;
-}
-
-
-article h4 {
-  font-size: .75em;
-  margin-bottom: .75em;
-  font-weight: bold;
-}
-
-article.post p {
-  font-size: 0.75em;
-  margin-bottom: 0.5em;
-  text-indent: 2em;
-  line-height: 21px;
-}
-article.post p.meta{
-  text-indent: 0;
-  margin-top: 3em;
-}
-
-article.post p code {
-  text-indent: 0;
-}
-
-.comments h1,
-.comments h2 {
-  font-size: 1em;
-  line-height: 2em;
 }
 
 p, blockquote, ul, ol { margin-bottom: 1.5em; }
@@ -115,18 +89,11 @@ small { font-size: .8em; }
 big { font-size: 1.2em; }
 
 blockquote {
-  $bq-margin: 1.2em;
   font-style: italic;
   position: relative;
   font-size: 1.2em;
   line-height: 1.5em;
   padding-left: 1em;
-  border-left: 4px solid rgba($text-color-light, .5);
-  cite {
-    font-style: italic;
-    a { color: $text-color-light !important; word-wrap: break-word; }
-    &:before { content: '\2014'; padding:{right: .3em; left: .3em;} color: $text-color-light; }
-  }
   @media only screen and (min-width: 992px) {
     padding-left: 1.5em;
     border-left-width: 4px;
@@ -160,21 +127,6 @@ blockquote {
   margin: .5em 1.5em 1em 0;
 }
 
-#blog-archives article {
-  margin: 20px 0;  
-}
-
-#blog-archives article h1 {
-  font-size: 1em;
-  margin-bottom: .5em;
-}
-
-#blog-archives article time {
-  font-size: .75em;
-}
-#blog-archives article footer {
-  font-size: .6em
-}
 /* @extend this to force long lines of continuous text to wrap */
 .force-wrap {
   white-space: -moz-pre-wrap;

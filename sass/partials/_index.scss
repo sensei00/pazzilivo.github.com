@@ -1,0 +1,33 @@
+.index-main {
+  .post {
+    padding: 30px 0;
+    .entry-title {
+      font-size: 28px;
+      margin-bottom: 4px;
+    }
+    .post-item-summary {
+      text-decoration: none;
+      p {
+        text-indent: 0;
+        color: $t-color-darker;
+        line-height: 1.2em;
+        font-weight: 300;
+        font-size: 20px;
+        margin-bottom: 4px;
+      }
+    }
+    .categories {
+      color: $t-color-darkest;
+      text-indent: 0;
+      font-size: 14px;
+      margin-bottom: 0;
+      a {
+        color: $t-color-darkest;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

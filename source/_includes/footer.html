@@ -1,1 +1,27 @@
-{% include custom/footer.html %}
+<footer>
+    <div class="layout-single-column global-footer">
+        <ul class="social-network clearfix">
+            <li><a href="/atom.xml" class="icon-rss-squared"></a></li>
+            {% if site.facebook_user %}
+            <li><a href="//facebook.com/{{ site.facebook_user }}" class="icon-facebook-squared"></a></li>
+            {% endif %}
+            {% if site.foursquare_user %}
+            <li><a href="//foursquare.com/{{ site.foursquare_user }}" class="icon-foursquare"></a></li>
+            {% endif %}
+            {% if site.github_user and site.github_show_profile_link %}
+            <li><a href="//github.com/{{ site.github_user }}/" class="icon-github-circled"></a></li>
+            {% endif %}
+            {% if site.weibo_user %}
+            <li><a href="//weibo.com/u/{{ site.weibo_user }}" class="icon-weibo"></a></li>
+            {% endif %}
+            {% if site.twitter_user %}
+            <li><a href="//twitter.com/{{ site.twitter_user }}" class="icon-twitter"></a></li>
+            {% endif %}
+        </ul>
+        <ul class="site-maps">
+            <li>Powered By <a href="//octopress.org/">Octopress</a></li>
+            <li><a href="/blog/archives/">Archives</a></li>
+            <li><a href="/about/">About me</a></li>
+        </ul>
+    </div>
+</footer>

@@ -3,12 +3,44 @@ layout: default
 single: true
 ---
 
-<article class="post">
-  {% include article.html %}
-</article>
-{% if site.disqus_short_name and page.comments == true %}
-  <section class="comments">
-    <h2>Comments</h2>
-    <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
-  </section>
+{% include site_nav.html %}
+{% if page.cover %}
+<div class="post-cover" style="background-image: url({{ page.cover }})">
+    <div class="post-cover-sticker">
+        {% unless page.no_header %}
+        <header class="layout-single-column">
+            <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+            <h2 class="post-summary">{{ page.summary }}</h2>
+            <h3 class="post-cate">Post in {{ page.categories }}</h3>
+        </header>
+        {% endunless %}
+    </div>
+</div>
+{% else %}
+<div class="post-banner layout-single-column">
+    {% if page.banner %}
+        <img src="{{ page.banner }}" alt="" class="layout-single-column"/>
+    {% endif %}
+    {% unless page.no_header %}
+    <header>
+        <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+        <h2 class="post-summary">{{ page.summary }}</h2>
+        <h3 class="post-cate">Post in {{ page.categories | category_links }}</h3>
+    </header>
+    {% endunless %}
+</div>
+
 {% endif %}
+<section class="article ">
+    <article class="post layout-single-column">
+        {% include article.html %}
+    </article>
+    <hr class="layout-single-column dark-horizon"/>
+    {% if site.disqus_short_name and page.comments == true %}
+    <section class="comments layout-single-column">
+        <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+    </section>
+    {% endif %}
+</section>
+{% include footer.html %}
+

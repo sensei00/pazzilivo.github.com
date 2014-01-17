@@ -3,7 +3,7 @@
 # ----------------------- #
 
 url: http://Pazzilivo.github.com
-title: Pazzilivo
+title: Ashley Pazzilivo
 subtitle: sezie the day，make your lives extraordinary
 author: Pazzilivo
 simple_search: http://google.com/search
@@ -36,7 +36,7 @@ category_dir: blog/categories
 markdown: rdiscount
 pygments: false # default python pygments have been replaced by pygments.rb
 
-paginate: 3          # Posts per page on the blog index
+paginate: 5          # Posts per page on the blog index
 pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
 excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
@@ -58,13 +58,13 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.ht
 # ----------------------- #
 
 # Github repositories
-github_user:
+github_user: Pazzilivo
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user: pazzilivo
+twitter_user: Pazzilivo
 twitter_tweet_count: 4
 twitter_show_replies: false
 twitter_follow_button: true
@@ -98,3 +98,9 @@ google_analytics_tracking_id:
 # Facebook Like
 facebook_like: false
 facebook_user: PazzAsh
+
+# Weibo
+weibo_user: 1645554627
+
+# Foursquare
+foursquare_user: pazzilivo

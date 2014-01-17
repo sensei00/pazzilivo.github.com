@@ -1,18 +1,35 @@
-body > header {
-  background: $header-bg;
-  h1 {
-    display: inline-block;
-    margin: 0;
-    a, a:visited, a:hover {
-      color: $title_color;
-      text-decoration: none;
+.header-bg {
+  height: 260px;
+  background-position: center;
+  background-image: url('/images/header_bg_top_big.jpg');
+  @include background-size(cover);
+}
+.index-header {
+  text-align: center;
+  margin: -60px auto 50px;
+  .avatar {
+    height: 120px;
+    width: 120px;
+    margin: 0 auto 20px;
+    border: 3px solid $bg-color;
+    @include box-shadow(0 1px 1px rgba(0,0,0,0.3));
+    @include border-radius(100%);
+    img {
+      display: block;
+      height: 100%;
+      width: 100%;
+      @include border-radius(100%);
     }
   }
-  h2 {
-    margin: .2em 0 0;
-    @extend .sans;
-    font-size: 1em;
-    color: $subtitle-color;
-    font-weight: normal;
+  .author {
+    font-size: 50px;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .bio {
+    color: $t-color-darker;
+    font-size: 18px;
   }
 }
+

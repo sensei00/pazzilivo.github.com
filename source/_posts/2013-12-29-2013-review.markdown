@@ -4,7 +4,7 @@ title: "2013 Review"
 date: 2013-12-29 14:26
 comments: true
 categories: personal
-
+summary: 记录我在2013年经历了什么，工作、学习、生活和那些人
 ---
 
 我的2013年回顾

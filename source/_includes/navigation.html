@@ -1,18 +1,18 @@
-{% if paginator.next_page %}
-  <span class="next">
-    <a href="{{paginator.next_page}}" rel="next">Continue &rarr;</a>
-  </span>
-{% endif %}
 {% if paginator.previous_page and paginator.page > 1 %}
   <span class="prev">
-    <a href="{{paginator.previous_page}}" rel="prev">Newer &larr;</a>
+    <a href="{{paginator.previous_page}}" rel="prev" class="btn">&larr; Newer</a>
   </span>
 {% elsif paginator.previous_page %}
   <span class="prev">
-    <a href="/" rel="prev">Newer &larr;</a>
+    <a href="/" rel="prev" class="btn">&larr; Newer</a>
   </span>
 {% elsif !index %}
   <span class="prev">
-    <a href="/" rel="prev">Back to blog &larr;</a>
+    <a href="/" rel="prev" class="btn">Back to blog &larr;</a>
+  </span>
+{% endif %}
+{% if paginator.next_page %}
+<span class="next">
+    <a href="{{paginator.next_page}}" rel="next" class="btn">Continue &rarr;</a>
   </span>
 {% endif %}

@@ -1,0 +1,123 @@
+.entry-title {
+  font-size: 50px;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+.post-summary {
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: 300;
+}
+.post-cate {
+  font-weight: 400;
+  margin-top: 12px;
+  font-size: 14px;
+}
+.post-cover {
+  height: 100%;
+  width: 100%;
+  @include background-size(cover);
+  position: relative;
+  margin-bottom: 60px;
+  .post-cover-sticker {
+    position: absolute;
+    width: 100%;
+    bottom: 170px;
+    header {
+      h1 {
+        color: #fff;
+      }
+      h2 {
+        color: rgba(255,255,255,0.65);
+      }
+      h3 {
+        color: rgba(255,255,255,0.65);
+      }
+    }
+  }
+}
+.post-banner {
+  padding: 100px 0 20px;
+  h1 {
+    color: $t-color;
+  }
+  h2 {
+    color: $t-color-darker;
+  }
+  h3 {
+    color: $t-color-darkest;
+    a {
+      color: $t-color-darkest;
+    }
+  }
+}
+.article {
+  .post {
+    p {
+      font-size: 22px;
+      line-height: 1.5;
+      letter-spacing: .01rem;
+      text-indent: 2em;
+      @extend .serif;
+      a {
+        text-decoration: underline;
+      }
+      code {
+        text-indent: 0;
+      }
+      img {
+        text-indent: 0;
+        margin-left: -1em;
+        max-width: 90%;
+      }
+    }
+    h3 {
+      font-style: italic;
+      margin-bottom: 5px;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+    blockquote {
+      margin-left: -1.5em;
+      border-left: 3px solid $bt-border-color-light;
+    }
+    .meta {
+      font-size: 16px;
+      color: $t-color-darker;
+      time {
+        text-indent: 0;
+        font-family: $sans;
+        float: left;
+      }
+      .share {
+        float: right;
+        a {
+          color: $t-color-darkest;
+        }
+        a:hover {
+          color: $t-color-darker;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+   .article {
+     .post {
+       p {
+         img {
+           width: 90%;
+         }
+       }
+     }
+   }
+}
+@media screen and (max-width: 800px) {
+  .article {
+    .post {
+      blockquote {
+        margin-left: 0;
+      }
+    }
+  }
+}

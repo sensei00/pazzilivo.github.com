@@ -1,36 +1,9 @@
-{% unless page.no_header %}
-  <header>
-    {% if index %}
-      <h2 class="entry-title">
-        {% if post.external-url %}
-        <a href="{{ post.external-url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>
-        <a href="{{ root_url }}{{ post.url }}" class="anchor">&#9875;</a>
-        {% else %}
-        <a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>
-        {% endif %}
-      </h2>
-    {% else %}
-      <h2 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h2>
-    {% endif %}
-
-  </header>
-{% endunless %}
-{% if index %}
-    {{ content | excerpt }}
-    {% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
-    {% if excerpted == 'true' %}
-        <footer>
-          <a rel="full-article" href="{{ root_url }}{{ post.url }}">{{ site.excerpt_link }}</a>
-        </footer>
-    {% endif %}
-{% else %}
 {{ content }}
-{% endif %}
 {% unless page.meta == false %}
-<p class="meta">
+<div class="meta clearfix">
     {% include post/date.html %}{{ time }}
-    {% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
-    | <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments</a>
-    {% endif %}
-</p>
+    <div class="share">
+        <a href="http://twitter.com/share" class="icon-twitter" data-url="{{ site.url }}{{ page.url }}" data-via="{{ site.twitter_user }}" data-counturl="{{ site.url }}{{ page.url }}" data-size="large" target="_blank"></a>
+    </div>
+</div>
 {% endunless %}

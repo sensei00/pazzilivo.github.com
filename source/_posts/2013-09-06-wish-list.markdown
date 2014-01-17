@@ -4,22 +4,22 @@ title: "My Wish List"
 date: 2013-09-06 13:56
 comments: true
 categories: personal
-
+summary: Something i want in 2013
 ---
 
-####Mac Apps
+###Mac Apps
 * Tweetbot for Mac -- $19.99
 * Readkit -- $1.99
 * OS X 10.9 -- Free
 
-####Hardware
+###Hardware
 * 机械键盘 -- 谢谢王总
 * 显示器转接线 -- 好像没什么用，没买
 
-####日用品
+###日用品
 * 冬天穿的鞋 -- 三叶草
 
-####Others
+###Others
 * Vps或者APN -- 6 Month Apn for 60 RMB 
 
 心愿达成

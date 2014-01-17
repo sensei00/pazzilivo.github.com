@@ -1,0 +1,14 @@
+.category {
+  h4 {
+    margin: 20px 0;
+    color: $t-color-darker;
+  }
+  article {
+    margin: 45px 0;
+    time, p {
+      color: $t-color-darkest;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+}

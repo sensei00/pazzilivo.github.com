@@ -7,11 +7,11 @@ categories: Octopress
 ---
 折腾了两天，终于把Blog搭建好了，过程中遇到不少问题，非常感谢twitter上 [@lucifr](https://twitter.com/lucifr) ， [@truthurt](https://twitter.com/truthurt) ，[@clipppit](https://twitter.com/clipppit)的热心帮助。
 
-!["Octopress"](http://ww1.sinaimg.cn/large/62152bc3gw1duw7actx3pj.jpg)
+!["Octopress"](http://ww1.sinaimg.cn/large/62152bc3gw1duw7actx3pj.jpg, 'Hello Octopress')
 
 总结一些过程中的问题主要有以下几点，希望在今后大家搭建的过程中有所帮助。
 
-####1.安装RVM
+###1.安装RVM
 
 	bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
 
@@ -29,13 +29,13 @@ Install Ruby 1.9.2 and ensure RVM has the latest RubyGems.
 	rvm install 1.9.2 && rvm use 1.9.2
 	rvm rubygems latest
 
-####2.安装Octopress
+###2.安装Octopress
 
 	git clone git://github.com/imathis/octopress.git octopress
 	cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
 	ruby --version  # Should report Ruby 1.9.2
 
-####3.再安点儿什么乱七八糟的
+###3.再安点儿什么乱七八糟的
 
 	gem install bundler
 	rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
@@ -68,7 +68,7 @@ Install Ruby 1.9.2 and ensure RVM has the latest RubyGems.
 
 原则很简单，只要记住`your_local_octopress_directory`对应的的remote source branch，而`_deploy`对应的是remote master branch即可。
 
-####我的主题是安装的slash
+~~我的主题是安装的slash~~
 
 	$ cd octopress
 	$ git clone git://github.com/tommy351/Octopress-Theme-Slash.git .themes/slash

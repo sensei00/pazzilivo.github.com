@@ -2,15 +2,8 @@
 {% include head.html %}
 <body {% if page.body_id %} id="{{ page.body_id }}" {% endif %}>
   <div class="wrapper">
-      <header role="banner" id="sidebar">
-          {% include custom/sidebar.html %}
-      </header>
-      <section id="main">
-          {{ content | expand_urls: root_url }}
-          <nav role="navigation" id="pagination">{% include navigation.html %}</nav>
-      </section>
+      {{ content | expand_urls: root_url }}
   </div>
-  {% include footer.html %}
   {% include after_footer.html %}
 </body>
 </html>

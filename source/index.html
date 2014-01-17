@@ -1,12 +1,15 @@
 ---
-layout: default
+layout: index
 ---
 
   {% assign index = true %}
   {% for post in paginator.posts %}
   {% assign content = post.content %}
     <article class="post">
-      {% include article.html %}
+        <h3 class="entry-title">
+            <a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>
+        </h3>
+        <a href="{{ root_url }}{{ post.url }}" class="post-item-summary"><p>{{ post.summary }}</p></a>
+        <p class="categories">posted in {{ post.categories | category_links }}</p>
     </article>
-    <hr>
   {% endfor %}
