@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: life | Pazzilivo]]></title>
+  <title><![CDATA[Category: life | Ashley Pazzilivo]]></title>
   <link href="http://Pazzilivo.github.com/blog/categories/life/atom.xml" rel="self"/>
   <link href="http://Pazzilivo.github.com/"/>
-  <updated>2014-01-01T22:30:55+08:00</updated>
+  <updated>2014-01-18T02:32:08+08:00</updated>
   <id>http://Pazzilivo.github.com/</id>
   <author>
     <name><![CDATA[Pazzilivo]]></name>
@@ -23,6 +23,19 @@
 <p>推荐个美剧： <strong>Person of Interest</strong></p>
 
 <p>好像又没钱了呢。。。不知道钱怎么没的。。。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Google Reader Die]]></title>
+    <link href="http://Pazzilivo.github.com/blog/2013/03/14/google-reader-die/"/>
+    <updated>2013-03-14T17:35:00+08:00</updated>
+    <id>http://Pazzilivo.github.com/blog/2013/03/14/google-reader-die</id>
+    <content type="html"><![CDATA[<p>今天 Google 宣布2005年就发布的 Google Reader将在2013年7月1日关闭，Google给出的理由是用户数量逐年下降。Google没有给出替代方案，让用户自己去寻找RSS阅读器替代品，未来四个月里可使用Google Takeout来导出Google Reader里的RSS订阅。</p>
+
+<p>也是在今天习总当选国家主席。</p>
+
+<p>两件事没什么联系，只是记录。</p>
 ]]></content>
   </entry>
   

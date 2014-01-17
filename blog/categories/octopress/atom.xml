@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Octopress | Pazzilivo]]></title>
+  <title><![CDATA[Category: Octopress | Ashley Pazzilivo]]></title>
   <link href="http://Pazzilivo.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://Pazzilivo.github.com/"/>
-  <updated>2014-01-01T22:30:55+08:00</updated>
+  <updated>2014-01-18T02:32:08+08:00</updated>
   <id>http://Pazzilivo.github.com/</id>
   <author>
     <name><![CDATA[Pazzilivo]]></name>
@@ -20,11 +20,11 @@
     <id>http://Pazzilivo.github.com/blog/2012/07/13/hello-world</id>
     <content type="html"><![CDATA[<p>折腾了两天，终于把Blog搭建好了，过程中遇到不少问题，非常感谢twitter上 <a href="https://twitter.com/lucifr">@lucifr</a> ， <a href="https://twitter.com/truthurt">@truthurt</a> ，<a href="https://twitter.com/clipppit">@clipppit</a>的热心帮助。</p>
 
-<p><img src="http://ww1.sinaimg.cn/large/62152bc3gw1duw7actx3pj.jpg" alt="&quot;Octopress&quot;" /></p>
+<p><img src="http://ww1.sinaimg.cn/large/62152bc3gw1duw7actx3pj.jpg," title="Hello Octopress" alt="&quot;Octopress&quot;" /></p>
 
 <p>总结一些过程中的问题主要有以下几点，希望在今后大家搭建的过程中有所帮助。</p>
 
-<h4>1.安装RVM</h4>
+<h3>1.安装RVM</h3>
 
 <pre><code>bash -s stable &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
 </code></pre>
@@ -46,14 +46,14 @@ source ~/.bash_profile
 rvm rubygems latest
 </code></pre>
 
-<h4>2.安装Octopress</h4>
+<h3>2.安装Octopress</h3>
 
 <pre><code>git clone git://github.com/imathis/octopress.git octopress
 cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
 ruby --version  # Should report Ruby 1.9.2
 </code></pre>
 
-<h4>3.再安点儿什么乱七八糟的</h4>
+<h3>3.再安点儿什么乱七八糟的</h3>
 
 <pre><code>gem install bundler
 rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
@@ -92,7 +92,7 @@ git push origin source
 
 <p>原则很简单，只要记住<code>your_local_octopress_directory</code>对应的的remote source branch，而<code>_deploy</code>对应的是remote master branch即可。</p>
 
-<h4>我的主题是安装的slash</h4>
+<p><del>我的主题是安装的slash</del></p>
 
 <pre><code>$ cd octopress
 $ git clone git://github.com/tommy351/Octopress-Theme-Slash.git .themes/slash

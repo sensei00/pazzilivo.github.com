@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Pazzilivo]]></title>
+  <title><![CDATA[Ashley Pazzilivo]]></title>
   <link href="http://Pazzilivo.github.com/atom.xml" rel="self"/>
   <link href="http://Pazzilivo.github.com/"/>
-  <updated>2014-01-01T22:30:55+08:00</updated>
+  <updated>2014-01-18T02:32:08+08:00</updated>
   <id>http://Pazzilivo.github.com/</id>
   <author>
     <name><![CDATA[Pazzilivo]]></name>
@@ -68,7 +68,7 @@
     <link href="http://Pazzilivo.github.com/blog/2013/09/06/wish-list/"/>
     <updated>2013-09-06T13:56:00+08:00</updated>
     <id>http://Pazzilivo.github.com/blog/2013/09/06/wish-list</id>
-    <content type="html"><![CDATA[<h4>Mac Apps</h4>
+    <content type="html"><![CDATA[<h3>Mac Apps</h3>
 
 <ul>
 <li>Tweetbot for Mac &#8211; $19.99</li>
@@ -77,7 +77,7 @@
 </ul>
 
 
-<h4>Hardware</h4>
+<h3>Hardware</h3>
 
 <ul>
 <li>机械键盘 &#8211; 谢谢王总</li>
@@ -85,14 +85,14 @@
 </ul>
 
 
-<h4>日用品</h4>
+<h3>日用品</h3>
 
 <ul>
 <li>冬天穿的鞋 &#8211; 三叶草</li>
 </ul>
 
 
-<h4>Others</h4>
+<h3>Others</h3>
 
 <ul>
 <li>Vps或者APN &#8211; 6 Month Apn for 60 RMB</li>
@@ -117,7 +117,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[google Reader Die]]></title>
+    <title type="html"><![CDATA[Google Reader Die]]></title>
     <link href="http://Pazzilivo.github.com/blog/2013/03/14/google-reader-die/"/>
     <updated>2013-03-14T17:35:00+08:00</updated>
     <id>http://Pazzilivo.github.com/blog/2013/03/14/google-reader-die</id>
@@ -217,7 +217,10 @@ Deployment finished. Your application is available at the following URLs www: ht
     <id>http://Pazzilivo.github.com/blog/2012/07/13/fuck</id>
     <content type="html"><![CDATA[<p>今天刚刚安装成功了一个<a href="">Octopress</a>的blog，由于需要使用<a href="">Markdown</a>语法进行编辑，所以在网上查了一些资料学习了一下，我记录一些比较常用的。</p>
 
-<h4>标题的形式</h4>
+<blockquote><p>Markdown 是一种轻量级标记语言，创始人为约翰·格鲁伯（John Gruber）和亚伦·斯沃茨（Aaron Swartz）。它允许人们 “使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。
+  Markdown 同时还是一个由 Gruber 编写的 Perl 脚本：Markdown.pl。它把用 markdown 语法编写的内容转换成有效的、结构良好的 XHTML 或 HTML 内容，并将左尖括号 <code>&lt;</code> 和 <code>&amp;</code> 号替换成它们各自的字符实体引用。它可以用作单独的脚本，Blosxom 和 Movable Type 的插件又或者 BBEdit 的文本过滤器.</p></blockquote>
+
+<h3>标题的形式</h3>
 
 <pre><code># This is an H1
 
@@ -226,7 +229,7 @@ Deployment finished. Your application is available at the following URLs www: ht
 ###### This is an H6
 </code></pre>
 
-<h4>代码的形式</h4>
+<h3>代码的形式</h3>
 
 <p>使用 4 个以上 空格或 1 个以上 的 tab 来标记代码段落，它们将被
 <code>&lt;pre&gt;</code> 和 <code>&lt;code&gt;</code> 包裹，这意味着代码段内的字体会是 monospace
@@ -239,7 +242,7 @@ Deployment finished. Your application is available at the following URLs www: ht
 
 <p>如果知道是什么语言的话，可以用 <code>```javascript</code> 这样包起来，结束是三个`</p>
 
-<h4>强调</h4>
+<h3>强调</h3>
 
 <pre><code>*single asterisks*
 
@@ -261,11 +264,11 @@ _double underscores__
     <id>http://Pazzilivo.github.com/blog/2012/07/13/hello-world</id>
     <content type="html"><![CDATA[<p>折腾了两天，终于把Blog搭建好了，过程中遇到不少问题，非常感谢twitter上 <a href="https://twitter.com/lucifr">@lucifr</a> ， <a href="https://twitter.com/truthurt">@truthurt</a> ，<a href="https://twitter.com/clipppit">@clipppit</a>的热心帮助。</p>
 
-<p><img src="http://ww1.sinaimg.cn/large/62152bc3gw1duw7actx3pj.jpg" alt="&quot;Octopress&quot;" /></p>
+<p><img src="http://ww1.sinaimg.cn/large/62152bc3gw1duw7actx3pj.jpg," title="Hello Octopress" alt="&quot;Octopress&quot;" /></p>
 
 <p>总结一些过程中的问题主要有以下几点，希望在今后大家搭建的过程中有所帮助。</p>
 
-<h4>1.安装RVM</h4>
+<h3>1.安装RVM</h3>
 
 <pre><code>bash -s stable &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
 </code></pre>
@@ -287,14 +290,14 @@ source ~/.bash_profile
 rvm rubygems latest
 </code></pre>
 
-<h4>2.安装Octopress</h4>
+<h3>2.安装Octopress</h3>
 
 <pre><code>git clone git://github.com/imathis/octopress.git octopress
 cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
 ruby --version  # Should report Ruby 1.9.2
 </code></pre>
 
-<h4>3.再安点儿什么乱七八糟的</h4>
+<h3>3.再安点儿什么乱七八糟的</h3>
 
 <pre><code>gem install bundler
 rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
@@ -333,7 +336,7 @@ git push origin source
 
 <p>原则很简单，只要记住<code>your_local_octopress_directory</code>对应的的remote source branch，而<code>_deploy</code>对应的是remote master branch即可。</p>
 
-<h4>我的主题是安装的slash</h4>
+<p><del>我的主题是安装的slash</del></p>
 
 <pre><code>$ cd octopress
 $ git clone git://github.com/tommy351/Octopress-Theme-Slash.git .themes/slash
