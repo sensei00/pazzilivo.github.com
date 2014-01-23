@@ -2,10 +2,17 @@
 layout: default
 ---
 
-{% include header.html %}
-<hr class="layout-single-column dark-horizon"/>
-<section class="index-main layout-single-column">
-    {{ content }}
-    <nav role="navigation" id="pagination">{% include navigation.html %}</nav>
-</section>
-{% include footer.html %}
+<div class="header-bg">
+    <div class="image-src"></div>
+</div>
+<div class="scroll-wrapper" tabindex="-1">
+    <div class="main-section-wrapper">
+        {% include header.html %}
+        <hr class="layout-single-column dark-horizon"/>
+        <section class="index-main layout-single-column">
+            {{ content }}
+            <nav role="navigation" id="pagination">{% include navigation.html %}</nav>
+        </section>
+        {% include footer.html %}
+    </div>
+</div>

@@ -107,6 +107,9 @@ task :new_post, :title do |t, args|
     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
     post.puts "comments: true"
     post.puts "categories: "
+    post.puts "summary: "
+    post.puts "cover: "
+    post.puts "banner: "
     post.puts "---"
   end
 end
@@ -137,7 +140,7 @@ task :new_page, :filename do |t, args|
     puts "Creating new page: #{file}"
     open(file, 'w') do |page|
       page.puts "---"
-      page.puts "layout: page"
+      page.puts "layout: post"
       page.puts "title: \"#{title}\""
       page.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
       page.puts "comments: true"

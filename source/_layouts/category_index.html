@@ -1,19 +1,26 @@
 ---
 layout: default
 ---
-
-{% include header.html %}
-<hr class="layout-single-column dark-horizon"/>
-<div id="blog-archives" class="category layout-single-column">
-{% for post in site.categories[page.category] %}
-{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-{% unless year == this_year %}
-  {% assign year = this_year %}
-  <h4>{{ year }}</h4>
-{% endunless %}
-<article>
-  {% include archive_post.html %}
-</article>
-{% endfor %}
+<div class="header-bg">
+    <div class="image-src"></div>
 </div>
-{% include footer.html %}
+<div class="scroll-wrapper" tabindex="-1">
+    <div class="main-section-wrapper">
+        {% include header.html %}
+        <hr class="layout-single-column dark-horizon"/>
+        <div id="blog-archives" class="category layout-single-column">
+            <h1>{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+        {% for post in site.categories[page.category] %}
+        {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+        {% unless year == this_year %}
+          {% assign year = this_year %}
+          <h4>{{ year }}</h4>
+        {% endunless %}
+        <article>
+          {% include archive_post.html %}
+        </article>
+        {% endfor %}
+        </div>
+        {% include footer.html %}
+    </div>
+</div>

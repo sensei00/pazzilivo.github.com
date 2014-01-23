@@ -1,16 +1,29 @@
 .header-bg {
   height: 260px;
   background-position: center;
-  background-image: url('/images/header_bg_top_big.jpg');
-  @include background-size(cover);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  .image-src {
+    background-image: url('/images/header_bg_top_big.jpg');
+    @include background-size(cover);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
 }
 .index-header {
   text-align: center;
-  margin: -60px auto 50px;
+  margin-top: 260px;
   .avatar {
     height: 120px;
     width: 120px;
-    margin: 0 auto 20px;
+    margin-top: -60px;
+    margin-bottom: 20px;
+    display: inline-block;
     border: 3px solid $bg-color;
     @include box-shadow(0 1px 1px rgba(0,0,0,0.3));
     @include border-radius(100%);

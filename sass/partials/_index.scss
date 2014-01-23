@@ -1,3 +1,13 @@
+.scroll-wrapper {
+  position: relative;
+  overflow: auto;
+  height: 100%;
+}
+.main-section-wrapper {
+  z-index: 200;
+  background: #fff;
+  position: relative;
+}
 .index-main {
   .post {
     padding: 30px 0;
