@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Ashley Pazzilivo]]></title>
   <link href="http://Pazzilivo.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://Pazzilivo.github.com/"/>
-  <updated>2014-01-23T16:23:34+08:00</updated>
+  <updated>2014-02-04T21:16:10+08:00</updated>
   <id>http://Pazzilivo.github.com/</id>
   <author>
     <name><![CDATA[Pazzilivo]]></name>
@@ -26,83 +26,91 @@
 
 <h3>1.安装RVM</h3>
 
-<pre><code>bash -s stable &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
-</code></pre>
-
-<p>Next add RVM to your shell as a function.</p>
-
-<pre><code>echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; . "$HOME/.rvm/scripts/rvm" # Load RVM function' &gt;&gt; ~/.bash_profile
+<p><code>sh
+bash -s stable &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+</code>
+Next add RVM to your shell as a function.
+<code>sh
+echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; . "$HOME/.rvm/scripts/rvm" # Load RVM function' &gt;&gt; ~/.bash_profile
 source ~/.bash_profile
-</code></pre>
+</code>
+<strong>PS.最好改一下配置文件，在主文件夹下边的 .bashrc文件，在最后加一行代码</strong></p>
 
-<p><strong>PS.最好改一下配置文件，在主文件夹下边的 .bashrc文件，在最后加一行代码</strong></p>
+<p>```sh</p>
 
-<pre><code>[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-</code></pre>
+<h1>This loads RVM into a shell session.</h1>
 
-<p>Install Ruby 1.9.2 and ensure RVM has the latest RubyGems.</p>
+<p>[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; . "$HOME/.rvm/scripts/rvm"
+```
+Install Ruby 1.9.2 and ensure RVM has the latest RubyGems.</p>
 
-<pre><code>rvm install 1.9.2 &amp;&amp; rvm use 1.9.2
+<p><code>sh
+rvm install 1.9.2 &amp;&amp; rvm use 1.9.2
 rvm rubygems latest
-</code></pre>
+</code></p>
 
 <h3>2.安装Octopress</h3>
 
-<pre><code>git clone git://github.com/imathis/octopress.git octopress
-cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
-ruby --version  # Should report Ruby 1.9.2
-</code></pre>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>install Octopress  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>git clone git://github.com/imathis/octopress.git octopress
+</span><span class='line'><span class="nb">cd </span>octopress    <span class="c"># If you use RVM, You&#39;ll be asked if you trust the .rvmrc file (say yes).</span>
+</span><span class='line'>ruby --version  <span class="c"># Should report Ruby 1.9.2&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;gem install bundler
+</span><span class='line'>rbenv rehash    <span class="c"># If you use rbenv, rehash to be able to run the bundle command</span>
+</span><span class='line'>bundle install&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;rake install
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<h3>3.再安点儿什么乱七八糟的</h3>
-
-<pre><code>gem install bundler
-rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
-bundle install
-</code></pre>
-
-<h4>4.安装默认主题</h4>
-
-<pre><code>rake install
-</code></pre>
-
-<h4>5.部署</h4>
+<h3>3.部署</h3>
 
 <p>申请一个你用户名命名的仓库地址，就像这样<code>username.github.com</code>，然后在终端里执行</p>
 
-<pre><code>rake setup_github_pages
-</code></pre>
-
-<p>然后让你输入一个地址，这样，用户名当然得换了，注意大小写，我就在这悲剧了。</p>
-
-<pre><code>git@github.com:username/username.github.com.git
-</code></pre>
-
-<p>静态化代码，部署</p>
-
-<pre><code>rake generate
+<p><code>sh
+rake setup_github_pages
+</code>
+然后让你输入一个地址，这样，用户名当然得换了，注意大小写。
+<code>sh
+git@github.com:username/username.github.com.git
+</code>
+静态化代码，部署
+<code>sh
+rake generate
 rake deploy
-</code></pre>
-
-<p>提交到source分支</p>
-
-<pre><code>git add .
-git commit -m 'blog source' 
+</code>
+提交到source分支
+<code>sh
+git add .
+git commit -m 'blog source'
 git push origin source
-</code></pre>
+</code>
+原则很简单，只要记住<code>your_local_octopress_directory</code>对应的的remote source branch，而<code>_deploy</code>对应的是remote master branch即可。</p>
 
-<p>原则很简单，只要记住<code>your_local_octopress_directory</code>对应的的remote source branch，而<code>_deploy</code>对应的是remote master branch即可。</p>
+<h3>4.第三方主题</h3>
 
-<p><del>我的主题是安装的slash</del></p>
+<p><a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">Octopress Wiki Theme List</a></p>
 
-<pre><code>$ cd octopress
-$ git clone git://github.com/tommy351/Octopress-Theme-Slash.git .themes/slash
-$ rake install['slash']
-$ rake generate
-</code></pre>
-
-<p>使用 zsh 時發生問題嗎？試試看<code>rake install\['slash'\]</code>。</p>
-
-<p>更多主题安装的问题可以参考<a href="http://zespia.tw/blog/2012/01/25/slash-theme/">Slash — 專為 Octopress 設計的極簡主題</a></p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>install new theme  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span><span class="nb">cd </span>octopress
+</span><span class='line'><span class="nv">$ </span>git clone theme-git-url .themes/theme_name
+</span><span class='line'><span class="nv">$ </span>rake install<span class="o">[</span><span class="s1">&#39;theme_name&#39;</span><span class="o">]</span>
+</span><span class='line'><span class="nv">$ </span>rake generate
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+使用 zsh 時發生問題嗎？試試看<code>rake install\['theme_name'\]</code>。</p>
 ]]></content>
   </entry>
   

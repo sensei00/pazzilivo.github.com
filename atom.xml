@@ -4,7 +4,7 @@
   <title><![CDATA[Ashley Pazzilivo]]></title>
   <link href="http://Pazzilivo.github.com/atom.xml" rel="self"/>
   <link href="http://Pazzilivo.github.com/"/>
-  <updated>2014-01-23T16:23:34+08:00</updated>
+  <updated>2014-02-04T21:16:10+08:00</updated>
   <id>http://Pazzilivo.github.com/</id>
   <author>
     <name><![CDATA[Pazzilivo]]></name>
@@ -12,6 +12,68 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[My Study Workflow]]></title>
+    <link href="http://Pazzilivo.github.com/blog/2014/02/04/my-study-workflow/"/>
+    <updated>2014-02-04T20:51:00+08:00</updated>
+    <id>http://Pazzilivo.github.com/blog/2014/02/04/my-study-workflow</id>
+    <content type="html"><![CDATA[<p><img src="http://ww2.sinaimg.cn/large/62152bc3jw1ed7np1vkshj20t708l3zq.jpg" alt="Workflow" /></p>
+
+<h3>一、信息的来源</h3>
+
+<ul>
+<li>Web</li>
+<li>Twitter</li>
+<li>Weibo</li>
+<li>WeChat</li>
+<li>Reader</li>
+</ul>
+
+
+<p>我的信息来源主要是以上几种。
+相比较来说 Reader 上获取的内容是最有价值的，微信的订阅也有一些比较有价值的东西。
+对于我来说微博的新闻属性相比较 Twitter 更多一些，Twitter 的社交属性更强。</p>
+
+<hr />
+
+<h3>二、信息的处理</h3>
+
+<ul>
+<li>Readability</li>
+<li>ifttt</li>
+<li>nvALT</li>
+</ul>
+
+
+<p>ifttt 的出现使得各种网络服务之间的互通更为方便。</p>
+
+<p>对我来说另外一个非常重要的工具是 nvALT，在我发现这个工具之前，我一直没有发现一个非常满意的方式去存储一个网页上的内容，Evernote 存储大段文字的排版那真是惨不忍睹… nvALT 的牛逼之处在于可以把一个 URL 的内容抓取转换成 markdown 格式文本。</p>
+
+<p>Readability可以把排版非常错乱的内容变的可读，而且有移动端的支持，零碎时间可以进行阅读。</p>
+
+<hr />
+
+<h3>三、信息的最终存储</h3>
+
+<ul>
+<li>Evernote</li>
+<li>Simplenote</li>
+<li>Dropbox</li>
+</ul>
+
+
+<p>Evernote 现在对我的作用主要是有价值 tweets 的 archive，通过 ifttt 将 tweet 存储到一个临时的笔记本里，每周人肉将这些 tweets 存储到一个笔记本组的相应笔记本里，微博也是用 Evernote 进行类似的存储，但是国内貌似没有类似 ifttt 的服务，现行都是用 Weico Pro 直接存进去。</p>
+
+<p>对于有价值的文章则是通过 nvALT，这个工具的牛逼之初不仅仅在于对文本的处理，这货还可以和 simplenote 进行同步，simplenote 对 markdown 合适的文本有非常好的支持，全平台的体验都非常好，而且相对于越来越臃肿的 Evernote，速度快的不是一点点～</p>
+
+<p>另外 nvALT 的配置中可以将存储方式改为单文件模式，将存储目录改到 Dropbox 的目录下，就可以通过 Dropbox 对原始文件进行同步备份，大大提高了数据的安全性～</p>
+
+<hr />
+
+<p>这就是我的信息的处理方式，如果有什么更好的更好的工具一定要告诉我哦～</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[2013 Review]]></title>
@@ -130,87 +192,6 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[使用 Dotcloud 搭建 Twip4 的 Twitter API]]></title>
-    <link href="http://Pazzilivo.github.com/blog/2012/09/01/dotcloudapi/"/>
-    <updated>2012-09-01T02:12:00+08:00</updated>
-    <id>http://Pazzilivo.github.com/blog/2012/09/01/dotcloudapi</id>
-    <content type="html"><![CDATA[<p>前几个月经过<a href="https://twitter.com/forzaRicky">@forzaRicky</a>提及到dotcloud可以搭建twitter的api，由于在ubuntu下搭建比较方便，苦于没有环境，一直没有折腾，前一阵因为想搞这个Blog，所以装了个Ubuntu，正好折腾一下，在搜索的过程中发现可以搭建TWIP4的api，甚是Happy。</p>
-
-<p>下边是教程，大部分参考<a href="https://twitter.com/soooulp">@sooulp</a>的Blog，但是也遇到了一些问题。</p>
-
-<h4>1.在ubuntu终端上安装dotcloud客户端</h4>
-
-<p>首先请确认你的python版本至少是2.6版的，如果不是2.6版本，请更新你的python。</p>
-
-<pre><code>$ python -V
-</code></pre>
-
-<p>安装有setuptools开发包的请使用easy_install安装DotCloud:</p>
-
-<pre><code>$ sudo easy_install dotcloud //官方推荐方式
-</code></pre>
-
-<p>如果没有setuptools开发包请使用下面的方式安装DotCloud客户端：</p>
-
-<pre><code>$ sudo apt-get install python-pip   //基于Debian的系统，获取pip(原pyinstall)
-$ sudo pip install dotcloud       //通过pip安装DotCloud
-</code></pre>
-
-<h4>2.配置dotcloud</h4>
-
-<pre><code>$ dotcloud setup //按提示输入用户名密码
-
-$ dotcloud create xxxx //Created application "xxxx"
-</code></pre>
-
-<h4>3.Twip的配置</h4>
-
-<pre><code>$ git clone git@github.com:twip/twip.git twip //从github下载twip源码
-</code></pre>
-
-<p>修改key，secret，basic-url值（格式为https://xxxx-usename.dotcloud.com/,xxxx为上一步创建的app名，切记后面的/不能少）</p>
-
-<p>twip.php 第二行新建行输入</p>
-
-<pre><code>error_reporting(0); 
-</code></pre>
-
-<p>然后在文件夹内添加新文档，内容为</p>
-
-<pre><code>if (!-e $request_filename){rewrite ^/(.*)$ /index.php last;}
-</code></pre>
-
-<p>然后命名为 <code>nginx.conf</code></p>
-
-<p>新建文档，内容为</p>
-
-<pre><code>www:
-  type: php //注意前边是两个空格，不能用tab键                                                                          
-</code></pre>
-
-<p>命名为<code>dotcloud.yml</code></p>
-
-<pre><code>$ dotcloud connect XXXX //与应用建立关联
-</code></pre>
-
-<h4>4.文件部署</h4>
-
-<p>在终端进twip文件所在文件夹，然后上传文件</p>
-
-<pre><code>$ dotcloud push
-Deployment finished. Your application is available at the following URLs www: http://xxxx-usename.dotcloud.com/
-</code></pre>
-
-<p>然后浏览器访问这个地址，会显示空白，然后再访问</p>
-
-<pre><code>http://xxxx-usename.dotcloud.com/index.html
-</code></pre>
-
-<p>出现twip4界面，搭建成功。</p>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[Markdown 使用]]></title>
     <link href="http://Pazzilivo.github.com/blog/2012/07/13/fuck/"/>
     <updated>2012-07-13T16:09:00+08:00</updated>
@@ -270,83 +251,117 @@ _double underscores__
 
 <h3>1.安装RVM</h3>
 
-<pre><code>bash -s stable &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
-</code></pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>bash -s stable &lt; &lt;<span class="o">(</span>curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer<span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p>Next add RVM to your shell as a function.</p>
 
-<pre><code>echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; . "$HOME/.rvm/scripts/rvm" # Load RVM function' &gt;&gt; ~/.bash_profile
-source ~/.bash_profile
-</code></pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nb">echo</span> <span class="s1">&#39;[[ -s &quot;$HOME/.rvm/scripts/rvm&quot; ]] &amp;&amp; . &quot;$HOME/.rvm/scripts/rvm&quot; # Load RVM function&#39;</span> &gt;&gt; ~/.bash_profile
+</span><span class='line'><span class="nb">source</span> ~/.bash_profile
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p><strong>PS.最好改一下配置文件，在主文件夹下边的 .bashrc文件，在最后加一行代码</strong></p>
 
-<pre><code>[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-</code></pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c"># This loads RVM into a shell session.</span>
+</span><span class='line'><span class="o">[[</span> -s <span class="s2">&quot;$HOME/.rvm/scripts/rvm&quot;</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> . <span class="s2">&quot;$HOME/.rvm/scripts/rvm&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p>Install Ruby 1.9.2 and ensure RVM has the latest RubyGems.</p>
 
-<pre><code>rvm install 1.9.2 &amp;&amp; rvm use 1.9.2
-rvm rubygems latest
-</code></pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>rvm install 1.9.2 <span class="o">&amp;&amp;</span> rvm use 1.9.2
+</span><span class='line'>rvm rubygems latest
+</span></code></pre></td></tr></table></div></figure>
+
 
 <h3>2.安装Octopress</h3>
 
-<pre><code>git clone git://github.com/imathis/octopress.git octopress
-cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
-ruby --version  # Should report Ruby 1.9.2
-</code></pre>
+<figure class='code'><figcaption><span>install Octopress  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>git clone git://github.com/imathis/octopress.git octopress
+</span><span class='line'><span class="nb">cd </span>octopress    <span class="c"># If you use RVM, You&#39;ll be asked if you trust the .rvmrc file (say yes).</span>
+</span><span class='line'>ruby --version  <span class="c"># Should report Ruby 1.9.2</span>
+</span><span class='line'>
+</span><span class='line'>gem install bundler
+</span><span class='line'>rbenv rehash    <span class="c"># If you use rbenv, rehash to be able to run the bundle command</span>
+</span><span class='line'>bundle install
+</span><span class='line'>
+</span><span class='line'>rake install
+</span></code></pre></td></tr></table></div></figure>
 
-<h3>3.再安点儿什么乱七八糟的</h3>
 
-<pre><code>gem install bundler
-rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
-bundle install
-</code></pre>
-
-<h4>4.安装默认主题</h4>
-
-<pre><code>rake install
-</code></pre>
-
-<h4>5.部署</h4>
+<h3>3.部署</h3>
 
 <p>申请一个你用户名命名的仓库地址，就像这样<code>username.github.com</code>，然后在终端里执行</p>
 
-<pre><code>rake setup_github_pages
-</code></pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>rake setup_github_pages
+</span></code></pre></td></tr></table></div></figure>
 
-<p>然后让你输入一个地址，这样，用户名当然得换了，注意大小写，我就在这悲剧了。</p>
 
-<pre><code>git@github.com:username/username.github.com.git
-</code></pre>
+<p>然后让你输入一个地址，这样，用户名当然得换了，注意大小写。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>git@github.com:username/username.github.com.git
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p>静态化代码，部署</p>
 
-<pre><code>rake generate
-rake deploy
-</code></pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>rake generate
+</span><span class='line'>rake deploy
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p>提交到source分支</p>
 
-<pre><code>git add .
-git commit -m 'blog source' 
-git push origin source
-</code></pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>git add .
+</span><span class='line'>git commit -m <span class="s1">&#39;blog source&#39;</span>
+</span><span class='line'>git push origin <span class="nb">source</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p>原则很简单，只要记住<code>your_local_octopress_directory</code>对应的的remote source branch，而<code>_deploy</code>对应的是remote master branch即可。</p>
 
-<p><del>我的主题是安装的slash</del></p>
+<h3>4.第三方主题</h3>
 
-<pre><code>$ cd octopress
-$ git clone git://github.com/tommy351/Octopress-Theme-Slash.git .themes/slash
-$ rake install['slash']
-$ rake generate
-</code></pre>
+<p><a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">Octopress Wiki Theme List</a></p>
 
-<p>使用 zsh 時發生問題嗎？試試看<code>rake install\['slash'\]</code>。</p>
+<figure class='code'><figcaption><span>install new theme  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span><span class="nb">cd </span>octopress
+</span><span class='line'><span class="nv">$ </span>git clone theme-git-url .themes/theme_name
+</span><span class='line'><span class="nv">$ </span>rake install<span class="o">[</span><span class="s1">&#39;theme_name&#39;</span><span class="o">]</span>
+</span><span class='line'><span class="nv">$ </span>rake generate
+</span></code></pre></td></tr></table></div></figure>
 
-<p>更多主题安装的问题可以参考<a href="http://zespia.tw/blog/2012/01/25/slash-theme/">Slash — 專為 Octopress 設計的極簡主題</a></p>
+
+<p>使用 zsh 時發生問題嗎？試試看<code>rake install\['theme_name'\]</code>。</p>
 ]]></content>
   </entry>
   
