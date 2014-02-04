@@ -73,13 +73,23 @@
     }
     h3 {
       font-style: italic;
-      margin-bottom: 5px;
       font-size: 24px;
       line-height: 1.2;
+      margin-bottom: 30px;
+    }
+    h4 {
+      margin-bottom: 30px;
     }
     blockquote {
       margin-left: -1.5em;
       border-left: 3px solid $bt-border-color-light;
+    }
+    hr {
+      width: 50%;
+      height: 1px;
+      border: 0;
+      margin-bottom: 30px;
+      background-color: $t-color-darkest;
     }
     .meta {
       font-size: 16px;

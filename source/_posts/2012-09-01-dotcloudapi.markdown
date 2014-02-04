@@ -7,6 +7,7 @@ categories: twitter
 summary: 应该已经失效了，搞不了~
 cover: http://ww2.sinaimg.cn/large/62152bc3jw1ecj64srmgoj20qe0eu74q.jpg
 banner: false
+published: false
 ---
 前几个月经过[@forzaRicky](https://twitter.com/forzaRicky )提及到dotcloud可以搭建twitter的api，由于在ubuntu下搭建比较方便，苦于没有环境，一直没有折腾，前一阵因为想搞这个Blog，所以装了个Ubuntu，正好折腾一下，在搜索的过程中发现可以搭建TWIP4的api，甚是Happy。
 
