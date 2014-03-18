@@ -4,7 +4,7 @@
   <title><![CDATA[Ashley Pazzilivo]]></title>
   <link href="http://Pazzilivo.github.com/atom.xml" rel="self"/>
   <link href="http://Pazzilivo.github.com/"/>
-  <updated>2014-02-04T21:16:10+08:00</updated>
+  <updated>2014-03-18T23:24:52+08:00</updated>
   <id>http://Pazzilivo.github.com/</id>
   <author>
     <name><![CDATA[Pazzilivo]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Kind of Lost]]></title>
+    <link href="http://Pazzilivo.github.com/blog/2014/03/18/lost/"/>
+    <updated>2014-03-18T23:18:00+08:00</updated>
+    <id>http://Pazzilivo.github.com/blog/2014/03/18/lost</id>
+    <content type="html"><![CDATA[<blockquote><p>  每当我找不到存在的意义<br/>
+  每当我迷失在黑夜里<br/>
+  夜空中最亮的星<br/>
+  请照亮我前行</p></blockquote>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[My Study Workflow]]></title>
