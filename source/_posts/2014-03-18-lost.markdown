@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Kind of Lost"
+date: 2014-03-18 23:18
+comments: true
+categories: life
+summary: 
+cover: 
+banner: 
+---
+
+>   每当我找不到存在的意义  
+>   每当我迷失在黑夜里  
+>   夜空中最亮的星  
+>   请照亮我前行
