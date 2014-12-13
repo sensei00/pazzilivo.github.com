@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “我还活着吧”
+title: 我还活着吧
 date: 2014-12-14 02:57
 comments: true
 categories: life
