@@ -1,0 +1,24 @@
+---
+layout: post
+title: “我还活着吧”
+date: 2014-12-14 02:57
+comments: true
+categories: life
+summary: 
+cover: 
+banner: 
+---
+
+只是证明我还活着。为了写下这句话折腾了两个小时 Ruby，最后发现是 Yosemite 不支持 1.9.2 了。
+
+最近忙的要死了。
+
+改了一行代码
+
+```bash
+/Users/ash/.rvm/gems/ruby-2.0.0-p598/gems/jekyll-0.11.2/lib/jekyll/convertible.rb
+```
+
+```ruby
+    self.content = File.read(File.join(base, name))
+```

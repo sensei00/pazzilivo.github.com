@@ -8,7 +8,7 @@ categories: Octopress
 
 折腾了两天，终于把Blog搭建好了，过程中遇到不少问题，非常感谢twitter上 [@lucifr](https://twitter.com/lucifr) ， [@truthurt](https://twitter.com/truthurt) ，[@clipppit](https://twitter.com/clipppit)的热心帮助。
 
-!["Octopress"](http://ww1.sinaimg.cn/large/62152bc3gw1duw7actx3pj.jpg, 'Hello Octopress')
+!["Octopress"](http://ww1.sinaimg.cn/large/62152bc3gw1duw7actx3pj.jpg 'Hello Octopress')
 
 总结一些过程中的问题主要有以下几点，希望在今后大家搭建的过程中有所帮助。
 
