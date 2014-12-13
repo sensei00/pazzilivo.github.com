@@ -4,7 +4,7 @@
   <title><![CDATA[Ashley Pazzilivo]]></title>
   <link href="http://Pazzilivo.github.com/atom.xml" rel="self"/>
   <link href="http://Pazzilivo.github.com/"/>
-  <updated>2014-03-18T23:28:15+08:00</updated>
+  <updated>2014-12-14T04:13:38+08:00</updated>
   <id>http://Pazzilivo.github.com/</id>
   <author>
     <name><![CDATA[Pazzilivo]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[“我还活着吧”]]></title>
+    <link href="http://Pazzilivo.github.com/blog/2014/12/14/i-am-alive/"/>
+    <updated>2014-12-14T02:57:00+08:00</updated>
+    <id>http://Pazzilivo.github.com/blog/2014/12/14/i-am-alive</id>
+    <content type="html"><![CDATA[<p>只是证明我还活着。为了写下这句话折腾了两个小时 Ruby，最后发现是 Yosemite 不支持 1.9.2 了。</p>
+
+<p>最近忙的要死了。</p>
+
+<p>改了一行代码</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>/Users/ash/.rvm/gems/ruby-2.0.0-p598/gems/jekyll-0.11.2/lib/jekyll/convertible.rb
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">self</span><span class="o">.</span><span class="n">content</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="no">File</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="nb">name</span><span class="p">))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Kind of Lost]]></title>
@@ -257,7 +282,7 @@ _double underscores__
     <id>http://Pazzilivo.github.com/blog/2012/07/13/hello-world</id>
     <content type="html"><![CDATA[<p>折腾了两天，终于把Blog搭建好了，过程中遇到不少问题，非常感谢twitter上 <a href="https://twitter.com/lucifr">@lucifr</a> ， <a href="https://twitter.com/truthurt">@truthurt</a> ，<a href="https://twitter.com/clipppit">@clipppit</a>的热心帮助。</p>
 
-<p><img src="http://ww1.sinaimg.cn/large/62152bc3gw1duw7actx3pj.jpg," title="Hello Octopress" alt="&quot;Octopress&quot;" /></p>
+<p><img src="http://ww1.sinaimg.cn/large/62152bc3gw1duw7actx3pj.jpg" title="Hello Octopress" alt="&quot;Octopress&quot;" /></p>
 
 <p>总结一些过程中的问题主要有以下几点，希望在今后大家搭建的过程中有所帮助。</p>
 
